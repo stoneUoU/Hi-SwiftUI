@@ -9,13 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
+        Text("Hello, SwiftUI!")
+            .padding()
+            .foregroundColor(.white)
+            .background(RoundedRectangle(cornerRadius: 10))
+            .scaleEffect(0.8)
+        Button(action: {
+            // 按钮操作
+        }, label: {
+            Text("按钮")
+        })
         .padding()
+        .foregroundColor(.blue)
+        .background(Circle())
+        Text("Hello, SwiftUI!")
+            .padding()
+            .foregroundColor(.white)
+            .background(RoundedRectangle(cornerRadius: 10))
+            .scaleEffect(0.8)
     }
 }
 
