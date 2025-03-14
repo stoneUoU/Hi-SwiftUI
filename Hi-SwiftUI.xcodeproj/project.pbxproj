@@ -14,6 +14,18 @@
 		8E447C002BBD52DF009B0FBF /* Hi_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E447BFF2BBD52DF009B0FBF /* Hi_SwiftUITests.swift */; };
 		8E447C0A2BBD52DF009B0FBF /* Hi_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E447C092BBD52DF009B0FBF /* Hi_SwiftUIUITests.swift */; };
 		8E447C0C2BBD52DF009B0FBF /* Hi_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E447C0B2BBD52DF009B0FBF /* Hi_SwiftUIUITestsLaunchTests.swift */; };
+		8ECA6FC52D8403A600EBA4D3 /* SendRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA6FC42D84039900EBA4D3 /* SendRequestView.swift */; };
+		8ECA6FD02D840E1F00EBA4D3 /* HiAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA6FC82D840E1F00EBA4D3 /* HiAlamofire.swift */; };
+		8ECA6FD12D840E1F00EBA4D3 /* HiApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA6FCB2D840E1F00EBA4D3 /* HiApiConfig.swift */; };
+		8ECA6FD22D840E1F00EBA4D3 /* HiApiConfigPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA6FCC2D840E1F00EBA4D3 /* HiApiConfigPlugin.swift */; };
+		8ECA6FD32D840E1F00EBA4D3 /* HiAPIConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA6FCD2D840E1F00EBA4D3 /* HiAPIConst.swift */; };
+		8ECA6FD42D840E1F00EBA4D3 /* HiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA6FCA2D840E1F00EBA4D3 /* HiAPI.swift */; };
+		8ECA6FDB2D8416F400EBA4D3 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 8ECA6FDA2D8416F400EBA4D3 /* SwiftyJSON */; };
+		8ECA6FDE2D84178200EBA4D3 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 8ECA6FDD2D84178200EBA4D3 /* MBProgressHUD */; };
+		8ECA6FE12D84263F00EBA4D3 /* HandyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 8ECA6FE02D84263F00EBA4D3 /* HandyJSON */; };
+		8ECA6FE42D8426B300EBA4D3 /* HiUnitCfgRespModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA6FE32D8426B300EBA4D3 /* HiUnitCfgRespModel.swift */; };
+		8EF1E2462D81356C0043DDD9 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 8EF1E2452D81356C0043DDD9 /* Moya */; };
+		8EF1E2482D81356C0043DDD9 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 8EF1E2472D81356C0043DDD9 /* RxMoya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +56,13 @@
 		8E447C052BBD52DF009B0FBF /* Hi-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hi-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E447C092BBD52DF009B0FBF /* Hi_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hi_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		8E447C0B2BBD52DF009B0FBF /* Hi_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hi_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8ECA6FC42D84039900EBA4D3 /* SendRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendRequestView.swift; sourceTree = "<group>"; };
+		8ECA6FC82D840E1F00EBA4D3 /* HiAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiAlamofire.swift; sourceTree = "<group>"; };
+		8ECA6FCA2D840E1F00EBA4D3 /* HiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiAPI.swift; sourceTree = "<group>"; };
+		8ECA6FCB2D840E1F00EBA4D3 /* HiApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiApiConfig.swift; sourceTree = "<group>"; };
+		8ECA6FCC2D840E1F00EBA4D3 /* HiApiConfigPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiApiConfigPlugin.swift; sourceTree = "<group>"; };
+		8ECA6FCD2D840E1F00EBA4D3 /* HiAPIConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiAPIConst.swift; sourceTree = "<group>"; };
+		8ECA6FE32D8426B300EBA4D3 /* HiUnitCfgRespModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiUnitCfgRespModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +70,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ECA6FDB2D8416F400EBA4D3 /* SwiftyJSON in Frameworks */,
+				8EF1E2482D81356C0043DDD9 /* RxMoya in Frameworks */,
+				8ECA6FDE2D84178200EBA4D3 /* MBProgressHUD in Frameworks */,
+				8ECA6FE12D84263F00EBA4D3 /* HandyJSON in Frameworks */,
+				8EF1E2462D81356C0043DDD9 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +118,8 @@
 		8E447BED2BBD52DE009B0FBF /* Hi-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				8ECA6FC62D840DE100EBA4D3 /* Base */,
 				8E447BEE2BBD52DE009B0FBF /* Hi_SwiftUIApp.swift */,
-				8E447BF02BBD52DE009B0FBF /* ContentView.swift */,
 				8E447BF22BBD52DF009B0FBF /* Assets.xcassets */,
 				8E447BF42BBD52DF009B0FBF /* Preview Content */,
 			);
@@ -125,6 +149,61 @@
 				8E447C0B2BBD52DF009B0FBF /* Hi_SwiftUIUITestsLaunchTests.swift */,
 			);
 			path = "Hi-SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+		8ECA6FC62D840DE100EBA4D3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8ECA6FE22D8426AA00EBA4D3 /* Model */,
+				8ECA6FD52D840E3200EBA4D3 /* Logic */,
+				8ECA6FCF2D840E1F00EBA4D3 /* Request */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8ECA6FC92D840E1F00EBA4D3 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				8ECA6FC82D840E1F00EBA4D3 /* HiAlamofire.swift */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		8ECA6FCE2D840E1F00EBA4D3 /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+				8ECA6FCA2D840E1F00EBA4D3 /* HiAPI.swift */,
+				8ECA6FCB2D840E1F00EBA4D3 /* HiApiConfig.swift */,
+				8ECA6FCC2D840E1F00EBA4D3 /* HiApiConfigPlugin.swift */,
+				8ECA6FCD2D840E1F00EBA4D3 /* HiAPIConst.swift */,
+			);
+			path = Moya;
+			sourceTree = "<group>";
+		};
+		8ECA6FCF2D840E1F00EBA4D3 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				8ECA6FC92D840E1F00EBA4D3 /* Alamofire */,
+				8ECA6FCE2D840E1F00EBA4D3 /* Moya */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		8ECA6FD52D840E3200EBA4D3 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				8ECA6FC42D84039900EBA4D3 /* SendRequestView.swift */,
+				8E447BF02BBD52DE009B0FBF /* ContentView.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		8ECA6FE22D8426AA00EBA4D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8ECA6FE32D8426B300EBA4D3 /* HiUnitCfgRespModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +294,12 @@
 				Base,
 			);
 			mainGroup = 8E447BE22BBD52DE009B0FBF;
+			packageReferences = (
+				8EF1E2442D81356C0043DDD9 /* XCRemoteSwiftPackageReference "Moya" */,
+				8ECA6FD92D8416F400EBA4D3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				8ECA6FDC2D84178200EBA4D3 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+				8ECA6FDF2D84263F00EBA4D3 /* XCRemoteSwiftPackageReference "HandyJSON" */,
+			);
 			productRefGroup = 8E447BEC2BBD52DE009B0FBF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,6 +343,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E447BF12BBD52DE009B0FBF /* ContentView.swift in Sources */,
+				8ECA6FC52D8403A600EBA4D3 /* SendRequestView.swift in Sources */,
+				8ECA6FE42D8426B300EBA4D3 /* HiUnitCfgRespModel.swift in Sources */,
+				8ECA6FD02D840E1F00EBA4D3 /* HiAlamofire.swift in Sources */,
+				8ECA6FD12D840E1F00EBA4D3 /* HiApiConfig.swift in Sources */,
+				8ECA6FD22D840E1F00EBA4D3 /* HiApiConfigPlugin.swift in Sources */,
+				8ECA6FD32D840E1F00EBA4D3 /* HiAPIConst.swift in Sources */,
+				8ECA6FD42D840E1F00EBA4D3 /* HiAPI.swift in Sources */,
 				8E447BEF2BBD52DE009B0FBF /* Hi_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +522,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +552,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,6 +682,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8ECA6FD92D8416F400EBA4D3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.2;
+			};
+		};
+		8ECA6FDC2D84178200EBA4D3 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.2.0;
+			};
+		};
+		8ECA6FDF2D84263F00EBA4D3 /* XCRemoteSwiftPackageReference "HandyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alibaba/HandyJSON";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.2;
+			};
+		};
+		8EF1E2442D81356C0043DDD9 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = exactVersion;
+				version = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8ECA6FDA2D8416F400EBA4D3 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8ECA6FD92D8416F400EBA4D3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		8ECA6FDD2D84178200EBA4D3 /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8ECA6FDC2D84178200EBA4D3 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+		8ECA6FE02D84263F00EBA4D3 /* HandyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8ECA6FDF2D84263F00EBA4D3 /* XCRemoteSwiftPackageReference "HandyJSON" */;
+			productName = HandyJSON;
+		};
+		8EF1E2452D81356C0043DDD9 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8EF1E2442D81356C0043DDD9 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		8EF1E2472D81356C0043DDD9 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8EF1E2442D81356C0043DDD9 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8E447BE32BBD52DE009B0FBF /* Project object */;
 }

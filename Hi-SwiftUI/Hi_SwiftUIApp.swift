@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Hi_SwiftUIApp: App {
+    
+    @StateObject var settings = Settings()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SendRequestView().environmentObject(settings)
         }
     }
 }
