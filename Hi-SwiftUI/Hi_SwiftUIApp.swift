@@ -14,7 +14,7 @@ struct Hi_SwiftUIApp: App {
     
     var body: some Scene {
         WindowGroup {
-            SendRequestView().environmentObject(settings)
+            ElecCertView().environmentObject(settings)
         }
     }
 }

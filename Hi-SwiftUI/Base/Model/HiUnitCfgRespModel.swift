@@ -22,6 +22,7 @@ class HiBaseModel<T:Decodable>: Decodable, HandyJSON {
 	required init() {}
 }
 
+@objcMembers
 class HiUnitCfgRespModel: Decodable, HandyJSON, ObservableObject {
 	var appVersion: HiUnitCfgRespModelDataAppVersion?
 	var newCntrVer: HiUnitCfgRespModelDataNewCntrVer?

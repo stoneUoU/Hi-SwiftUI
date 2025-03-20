@@ -16,15 +16,6 @@ let HSAURL:String = "https://fuwu.nhsa.gov.cn/ebus/fuwu/api/base/api/unitCfg";
 class HiRequest:ObservableObject {
     @Published var respModel:HiUnitCfgRespModel?
     func fetchDatas(callback:@escaping (_ respModel:HiUnitCfgRespModel)->()) {
-//        var params = Dictionary<String,Any>();
-//        params["contractVersionQueryDTO"] = ["contractType":4];
-//        params["noticeTypeParamDTO"] = [:];
-//        var sendParams: [String: Any] = ["appId":"19E179E5DC29C05E65B90CDE57A1C7E5","encType":"plain","signType":"plain","timestamp":"1652165413","transType":"ec.queryCode","version":"1.0.0"];
-//        sendParams["data"] = params;
-//        HiAlamofire.requestData(HSAURL, .POST,parameters: sendParams,of: HiBaseModel<HiUnitCfgRespModel>.self) { result in
-//            let resp:HiBaseModel = result as! HiBaseModel<HiUnitCfgRespModel>;
-//            debugPrint(resp.toJSON());
-//        }
         var params = Dictionary<String,Any>();
         params["contractVersionQueryDTO"] = ["contractType":4];
         params["noticeTypeParamDTO"] = [:];
@@ -33,6 +24,8 @@ class HiRequest:ObservableObject {
             if let handyJSON:HiUnitCfgRespModel = HiUnitCfgRespModel.deserialize(from: dataHandyJSON) {
                 self.respModel = handyJSON;
                 callback(handyJSON);
+//                print(handyJSON.toJSONString() ?? "");
+//                print(handyJSON.yy ?? "");
             }
         }, error: { statusCode in
             callback(HiUnitCfgRespModel());

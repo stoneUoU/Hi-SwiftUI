@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E0A097E2D880DD100044ADD /* HiJsonLoadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A097B2D880DD100044ADD /* HiJsonLoadHelper.swift */; };
+		8E0A097F2D880DD100044ADD /* HiJsonStrHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A097C2D880DD100044ADD /* HiJsonStrHelper.swift */; };
 		8E447BEF2BBD52DE009B0FBF /* Hi_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E447BEE2BBD52DE009B0FBF /* Hi_SwiftUIApp.swift */; };
 		8E447BF12BBD52DE009B0FBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E447BF02BBD52DE009B0FBF /* ContentView.swift */; };
 		8E447BF32BBD52DF009B0FBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E447BF22BBD52DF009B0FBF /* Assets.xcassets */; };
@@ -14,8 +16,12 @@
 		8E447C002BBD52DF009B0FBF /* Hi_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E447BFF2BBD52DF009B0FBF /* Hi_SwiftUITests.swift */; };
 		8E447C0A2BBD52DF009B0FBF /* Hi_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E447C092BBD52DF009B0FBF /* Hi_SwiftUIUITests.swift */; };
 		8E447C0C2BBD52DF009B0FBF /* Hi_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E447C0B2BBD52DF009B0FBF /* Hi_SwiftUIUITestsLaunchTests.swift */; };
+		8E7DC9CB2D8C0FFB00C03891 /* ElecCertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7DC9CA2D8C0FFB00C03891 /* ElecCertView.swift */; };
+		8EC1C1312D891C20000EB8B4 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1C12C2D891C20000EB8B4 /* NSObject+YYModel.m */; };
+		8EC1C1322D891C20000EB8B4 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1C12E2D891C20000EB8B4 /* YYClassInfo.m */; };
+		8EC1C1342D891C56000EB8B4 /* Hi-SwiftUI-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1C1332D891C56000EB8B4 /* Hi-SwiftUI-Bridging-Header.h */; };
+		8EC1C13B2D894F4D000EB8B4 /* MockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1C13A2D894F4D000EB8B4 /* MockView.swift */; };
 		8ECA6FC52D8403A600EBA4D3 /* SendRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA6FC42D84039900EBA4D3 /* SendRequestView.swift */; };
-		8ECA6FD02D840E1F00EBA4D3 /* HiAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA6FC82D840E1F00EBA4D3 /* HiAlamofire.swift */; };
 		8ECA6FD12D840E1F00EBA4D3 /* HiApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA6FCB2D840E1F00EBA4D3 /* HiApiConfig.swift */; };
 		8ECA6FD22D840E1F00EBA4D3 /* HiApiConfigPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA6FCC2D840E1F00EBA4D3 /* HiApiConfigPlugin.swift */; };
 		8ECA6FD32D840E1F00EBA4D3 /* HiAPIConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA6FCD2D840E1F00EBA4D3 /* HiAPIConst.swift */; };
@@ -26,6 +32,7 @@
 		8ECA6FE42D8426B300EBA4D3 /* HiUnitCfgRespModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA6FE32D8426B300EBA4D3 /* HiUnitCfgRespModel.swift */; };
 		8EF1E2462D81356C0043DDD9 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 8EF1E2452D81356C0043DDD9 /* Moya */; };
 		8EF1E2482D81356C0043DDD9 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 8EF1E2472D81356C0043DDD9 /* RxMoya */; };
+		AE9D1EB06DADEE6BC177475E /* Pods_Hi_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137C2BD1B1A65D0E453D3851 /* Pods_Hi_SwiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +53,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		137C2BD1B1A65D0E453D3851 /* Pods_Hi_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hi_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D3FB59FEC51CCD80C78FC4 /* Pods-Hi-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hi-SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-Hi-SwiftUI/Pods-Hi-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		20A25A8769588E211262E118 /* Pods-Hi-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hi-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-Hi-SwiftUI/Pods-Hi-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		8E0A097B2D880DD100044ADD /* HiJsonLoadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiJsonLoadHelper.swift; sourceTree = "<group>"; };
+		8E0A097C2D880DD100044ADD /* HiJsonStrHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiJsonStrHelper.swift; sourceTree = "<group>"; };
 		8E447BEB2BBD52DE009B0FBF /* Hi-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hi-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E447BEE2BBD52DE009B0FBF /* Hi_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hi_SwiftUIApp.swift; sourceTree = "<group>"; };
 		8E447BF02BBD52DE009B0FBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,8 +68,15 @@
 		8E447C052BBD52DF009B0FBF /* Hi-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hi-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E447C092BBD52DF009B0FBF /* Hi_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hi_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		8E447C0B2BBD52DF009B0FBF /* Hi_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hi_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8E7DC9CA2D8C0FFB00C03891 /* ElecCertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElecCertView.swift; sourceTree = "<group>"; };
+		8EC1C12B2D891C20000EB8B4 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		8EC1C12C2D891C20000EB8B4 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		8EC1C12D2D891C20000EB8B4 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		8EC1C12E2D891C20000EB8B4 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		8EC1C12F2D891C20000EB8B4 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		8EC1C1332D891C56000EB8B4 /* Hi-SwiftUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hi-SwiftUI-Bridging-Header.h"; sourceTree = "<group>"; };
+		8EC1C13A2D894F4D000EB8B4 /* MockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockView.swift; sourceTree = "<group>"; };
 		8ECA6FC42D84039900EBA4D3 /* SendRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendRequestView.swift; sourceTree = "<group>"; };
-		8ECA6FC82D840E1F00EBA4D3 /* HiAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiAlamofire.swift; sourceTree = "<group>"; };
 		8ECA6FCA2D840E1F00EBA4D3 /* HiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiAPI.swift; sourceTree = "<group>"; };
 		8ECA6FCB2D840E1F00EBA4D3 /* HiApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiApiConfig.swift; sourceTree = "<group>"; };
 		8ECA6FCC2D840E1F00EBA4D3 /* HiApiConfigPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiApiConfigPlugin.swift; sourceTree = "<group>"; };
@@ -75,6 +94,7 @@
 				8ECA6FDE2D84178200EBA4D3 /* MBProgressHUD in Frameworks */,
 				8ECA6FE12D84263F00EBA4D3 /* HandyJSON in Frameworks */,
 				8EF1E2462D81356C0043DDD9 /* Moya in Frameworks */,
+				AE9D1EB06DADEE6BC177475E /* Pods_Hi_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +115,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		154CE15ACE2515F640434397 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				137C2BD1B1A65D0E453D3851 /* Pods_Hi_SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DEDAB9E6637DD2B54B41F8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19D3FB59FEC51CCD80C78FC4 /* Pods-Hi-SwiftUI.debug.xcconfig */,
+				20A25A8769588E211262E118 /* Pods-Hi-SwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8E0A097A2D880DA900044ADD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8E0A097D2D880DD100044ADD /* HiJson */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8E0A097D2D880DD100044ADD /* HiJson */ = {
+			isa = PBXGroup;
+			children = (
+				8E0A097B2D880DD100044ADD /* HiJsonLoadHelper.swift */,
+				8E0A097C2D880DD100044ADD /* HiJsonStrHelper.swift */,
+			);
+			path = HiJson;
+			sourceTree = "<group>";
+		};
 		8E447BE22BBD52DE009B0FBF = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +156,8 @@
 				8E447BFE2BBD52DF009B0FBF /* Hi-SwiftUITests */,
 				8E447C082BBD52DF009B0FBF /* Hi-SwiftUIUITests */,
 				8E447BEC2BBD52DE009B0FBF /* Products */,
+				154CE15ACE2515F640434397 /* Frameworks */,
+				8DEDAB9E6637DD2B54B41F8B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,7 +174,9 @@
 		8E447BED2BBD52DE009B0FBF /* Hi-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				8E0A097A2D880DA900044ADD /* Helpers */,
 				8ECA6FC62D840DE100EBA4D3 /* Base */,
+				8ECA6FD52D840E3200EBA4D3 /* Logic */,
 				8E447BEE2BBD52DE009B0FBF /* Hi_SwiftUIApp.swift */,
 				8E447BF22BBD52DF009B0FBF /* Assets.xcassets */,
 				8E447BF42BBD52DF009B0FBF /* Preview Content */,
@@ -151,22 +209,35 @@
 			path = "Hi-SwiftUIUITests";
 			sourceTree = "<group>";
 		};
+		8EC1C12A2D891C02000EB8B4 /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				8EC1C1302D891C20000EB8B4 /* YYModel */,
+				8EC1C1332D891C56000EB8B4 /* Hi-SwiftUI-Bridging-Header.h */,
+			);
+			path = OC;
+			sourceTree = "<group>";
+		};
+		8EC1C1302D891C20000EB8B4 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				8EC1C12B2D891C20000EB8B4 /* NSObject+YYModel.h */,
+				8EC1C12C2D891C20000EB8B4 /* NSObject+YYModel.m */,
+				8EC1C12D2D891C20000EB8B4 /* YYClassInfo.h */,
+				8EC1C12E2D891C20000EB8B4 /* YYClassInfo.m */,
+				8EC1C12F2D891C20000EB8B4 /* YYModel.h */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
 		8ECA6FC62D840DE100EBA4D3 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				8EC1C12A2D891C02000EB8B4 /* OC */,
 				8ECA6FE22D8426AA00EBA4D3 /* Model */,
-				8ECA6FD52D840E3200EBA4D3 /* Logic */,
 				8ECA6FCF2D840E1F00EBA4D3 /* Request */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		8ECA6FC92D840E1F00EBA4D3 /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				8ECA6FC82D840E1F00EBA4D3 /* HiAlamofire.swift */,
-			);
-			path = Alamofire;
 			sourceTree = "<group>";
 		};
 		8ECA6FCE2D840E1F00EBA4D3 /* Moya */ = {
@@ -183,7 +254,6 @@
 		8ECA6FCF2D840E1F00EBA4D3 /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				8ECA6FC92D840E1F00EBA4D3 /* Alamofire */,
 				8ECA6FCE2D840E1F00EBA4D3 /* Moya */,
 			);
 			path = Request;
@@ -194,6 +264,8 @@
 			children = (
 				8ECA6FC42D84039900EBA4D3 /* SendRequestView.swift */,
 				8E447BF02BBD52DE009B0FBF /* ContentView.swift */,
+				8EC1C13A2D894F4D000EB8B4 /* MockView.swift */,
+				8E7DC9CA2D8C0FFB00C03891 /* ElecCertView.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -213,6 +285,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E447C0F2BBD52DF009B0FBF /* Build configuration list for PBXNativeTarget "Hi-SwiftUI" */;
 			buildPhases = (
+				198B30BB3C4F06CD58A0B612 /* [CP] Check Pods Manifest.lock */,
 				8E447BE72BBD52DE009B0FBF /* Sources */,
 				8E447BE82BBD52DE009B0FBF /* Frameworks */,
 				8E447BE92BBD52DE009B0FBF /* Resources */,
@@ -337,19 +410,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		198B30BB3C4F06CD58A0B612 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hi-SwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8E447BE72BBD52DE009B0FBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8E447BF12BBD52DE009B0FBF /* ContentView.swift in Sources */,
+				8EC1C1342D891C56000EB8B4 /* Hi-SwiftUI-Bridging-Header.h in Sources */,
+				8EC1C13B2D894F4D000EB8B4 /* MockView.swift in Sources */,
 				8ECA6FC52D8403A600EBA4D3 /* SendRequestView.swift in Sources */,
+				8E0A097E2D880DD100044ADD /* HiJsonLoadHelper.swift in Sources */,
+				8EC1C1312D891C20000EB8B4 /* NSObject+YYModel.m in Sources */,
 				8ECA6FE42D8426B300EBA4D3 /* HiUnitCfgRespModel.swift in Sources */,
-				8ECA6FD02D840E1F00EBA4D3 /* HiAlamofire.swift in Sources */,
 				8ECA6FD12D840E1F00EBA4D3 /* HiApiConfig.swift in Sources */,
+				8E7DC9CB2D8C0FFB00C03891 /* ElecCertView.swift in Sources */,
 				8ECA6FD22D840E1F00EBA4D3 /* HiApiConfigPlugin.swift in Sources */,
 				8ECA6FD32D840E1F00EBA4D3 /* HiAPIConst.swift in Sources */,
+				8EC1C1322D891C20000EB8B4 /* YYClassInfo.m in Sources */,
 				8ECA6FD42D840E1F00EBA4D3 /* HiAPI.swift in Sources */,
+				8E0A097F2D880DD100044ADD /* HiJsonStrHelper.swift in Sources */,
 				8E447BEF2BBD52DE009B0FBF /* Hi_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +612,7 @@
 		};
 		8E447C102BBD52DF009B0FBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D3FB59FEC51CCD80C78FC4 /* Pods-Hi-SwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -531,6 +636,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.hsa.hi-swiftui.Hi-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Hi-SwiftUI/Base/OC/Hi-SwiftUI-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -538,6 +644,7 @@
 		};
 		8E447C112BBD52DF009B0FBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20A25A8769588E211262E118 /* Pods-Hi-SwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -561,6 +668,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.hsa.hi-swiftui.Hi-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Hi-SwiftUI/Base/OC/Hi-SwiftUI-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
