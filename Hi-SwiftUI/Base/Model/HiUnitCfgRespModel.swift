@@ -24,14 +24,14 @@ class HiBaseModel<T:Decodable>: Decodable, HandyJSON {
 
 @objcMembers
 class HiUnitCfgRespModel: Decodable, HandyJSON, ObservableObject {
-	var appVersion: HiUnitCfgRespModelDataAppVersion?
-	var newCntrVer: HiUnitCfgRespModelDataNewCntrVer?
-	var topList: HiUnitCfgRespModelDataTopList?
+    var appVersion: HiUnitCfgRespModelDataAppVersion?
+    var newCntrVer: HiUnitCfgRespModelDataNewCntrVer?
+    var topList: HiUnitCfgRespModelDataTopList?
 
 	required init() {}
 }
 
-class HiUnitCfgRespModelDataNewCntrVer: Decodable, HandyJSON {
+class HiUnitCfgRespModelDataNewCntrVer: Decodable, HandyJSON, ObservableObject {
 	var content: String?
 	var contractType: String?
 	var createTime: String?
@@ -41,7 +41,7 @@ class HiUnitCfgRespModelDataNewCntrVer: Decodable, HandyJSON {
 	required init() {}
 }
 
-class HiUnitCfgRespModelDataAppVersion: Decodable, HandyJSON {
+class HiUnitCfgRespModelDataAppVersion: Decodable, HandyJSON, ObservableObject {
 	var content: String?
 	var newVersion: String?
 	var newVersionSize: String?
@@ -54,13 +54,13 @@ class HiUnitCfgRespModelDataAppVersion: Decodable, HandyJSON {
 	required init() {}
 }
 
-class HiUnitCfgRespModelDataTopList: Decodable, HandyJSON {
+class HiUnitCfgRespModelDataTopList: Decodable, HandyJSON, ObservableObject {
 	var list = [HiUnitCfgRespModelDataTopListList]()
 
 	required init() {}
 }
 
-class HiUnitCfgRespModelDataTopListList: Decodable, HandyJSON {
+class HiUnitCfgRespModelDataTopListList: Decodable, HandyJSON, ObservableObject {
 	var bizCode: String?
 	var newsId: String?
 	var newsPkId: Int = 0

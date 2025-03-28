@@ -7,14 +7,10 @@
 import SwiftUI
 import SwiftyJSON
 
-let HSAURL:String = "https://fuwu.nhsa.gov.cn/ebus/fuwu/api/base/api/unitCfg";
-
-//class SendRequestRespModel: ObservableObject {
-//    @Published var count = 0
-//}
-
 class HiRequest:ObservableObject {
     @Published var respModel:HiUnitCfgRespModel?
+    @Published var settingModel:HiListAppModuleRespModel?
+    
     func fetchDatas(callback:@escaping (_ respModel:HiUnitCfgRespModel)->()) {
         var params = Dictionary<String,Any>();
         params["contractVersionQueryDTO"] = ["contractType":4];
@@ -24,8 +20,6 @@ class HiRequest:ObservableObject {
             if let handyJSON:HiUnitCfgRespModel = HiUnitCfgRespModel.deserialize(from: dataHandyJSON) {
                 self.respModel = handyJSON;
                 callback(handyJSON);
-//                print(handyJSON.toJSONString() ?? "");
-//                print(handyJSON.yy ?? "");
             }
         }, error: { statusCode in
             callback(HiUnitCfgRespModel());
@@ -33,10 +27,26 @@ class HiRequest:ObservableObject {
             callback(HiUnitCfgRespModel());
         })
     }
+    
+    func fetchHomeDatas(callback:@escaping (_ respModel:Any)->()) {
+        var params = Dictionary<String,Any>();
+        params["ver"] = "1.3.17";
+        params["clntType"] = 2;
+        HiAPI.request(.fetchHSAHomeData(params), success: { json in
+            let dataHandyJSON:[String : Any] = JSON(json)["data"].rawValue as! [String : Any];
+            if let handyJSON:HiListAppModuleRespModel = HiListAppModuleRespModel.deserialize(from: dataHandyJSON) {
+                self.settingModel = handyJSON;
+                callback(handyJSON);
+            }
+        }, error: { statusCode in
+            callback(HiListAppModuleRespModel());
+        }, failure: { error in
+            callback(HiListAppModuleRespModel());
+        })
+    }
 }
 
 struct SendRequestView: View {
-//    @StateObject private var respModel = SendRequestRespModel()
     @StateObject var hiRequest = HiRequest()
     var body: some View {
         VStack{
@@ -45,21 +55,23 @@ struct SendRequestView: View {
                 .foregroundColor(Color.red)
                 .padding()
                 .background(Color.white)
-            Button(action: {
-//                respModel.count += 1;
-                UserDefaults.standard.setValue("I am SwiftUI Question", forKey: "userName")
-            }, label: {
-                Text("SAVE")
-              .foregroundColor(.white)
-              .padding(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
-              .background(Color.red)
-              .clipShape(Capsule())
-            })
             if let options:HiUnitCfgRespModel = hiRequest.respModel {
-                SendRequestSonView(respModel: options)
+                SendRequestSonView(respModel: options) { str in
+                    print("str_____\(str)");
+                }
+            }
+            if let options:[HiListAppModuleRespModelHomePage] = hiRequest.settingModel?.homePage {
+                List(options, id: \.key) { item in
+                    Text(item.content ?? "").font(.title)
+                        .foregroundColor(Color.red)
+                        .padding()
+                        .background(Color.white)
+                }
             }
         }.onAppear {
             hiRequest.fetchDatas { resp in
+            };
+            hiRequest.fetchHomeDatas { resp in
             };
         }
     }
@@ -67,8 +79,7 @@ struct SendRequestView: View {
 
 struct SendRequestSonView: View {
     @ObservedObject var respModel: HiUnitCfgRespModel
-    @AppStorage("userName") var userName:String?
-    @State var user: String?
+    let clickHandle: (String) -> Void
     var body: some View {
         VStack{
             Text("展示： \(respModel.newCntrVer?.title ?? "")")
@@ -76,10 +87,10 @@ struct SendRequestSonView: View {
                 .foregroundColor(Color.green)
                 .padding()
                 .background(Color.white)
-            Text(userName ?? "").padding(EdgeInsets(top: 36, leading: 16, bottom: 0, trailing: 16))
-            Text(user ?? "").padding(EdgeInsets(top: 36, leading: 16, bottom: 0, trailing: 16))
+            Button("点击") {
+                clickHandle("Swift UI");
+            }
         }.onAppear {
-            user = UserDefaults.standard.string(forKey: "userName")
-          }
+      }
     }
 }

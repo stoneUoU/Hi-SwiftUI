@@ -19,6 +19,7 @@ struct ContentView: View {
     @StateObject private var model = DataModel()
     @Environment(\.colorScheme) var colorScheme
     @AppStorage("userName") var userName:String?
+    @State private var modelStr:String?
     var body: some View {
         VStack{
             Text("父类： \(model.count)")
@@ -34,7 +35,7 @@ struct ContentView: View {
             Text(userName ?? "").padding(EdgeInsets(top: 36, leading: 16, bottom: 0, trailing: 16))
             
         }.onAppear {
-//            userName = UserDefaults.standard.string(forKey: "userName")
+            modelStr = UserDefaults.standard.string(forKey: "userName")
           }
     }
 }
