@@ -14,7 +14,7 @@ struct Hi_SwiftUIApp: App {
     
     var body: some Scene {
         WindowGroup {
-            CardView().environmentObject(settings)
+            HealthCodeView().environmentObject(settings)
         }
     }
 }

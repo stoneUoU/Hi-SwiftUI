@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8E0A097E2D880DD100044ADD /* HiJsonLoadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A097B2D880DD100044ADD /* HiJsonLoadHelper.swift */; };
 		8E0A097F2D880DD100044ADD /* HiJsonStrHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A097C2D880DD100044ADD /* HiJsonStrHelper.swift */; };
+		8E3887EA2D969B5E00627AAE /* HealthCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3887E92D969B5E00627AAE /* HealthCodeView.swift */; };
 		8E447BEF2BBD52DE009B0FBF /* Hi_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E447BEE2BBD52DE009B0FBF /* Hi_SwiftUIApp.swift */; };
 		8E447BF12BBD52DE009B0FBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E447BF02BBD52DE009B0FBF /* ContentView.swift */; };
 		8E447BF32BBD52DF009B0FBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E447BF22BBD52DF009B0FBF /* Assets.xcassets */; };
@@ -16,6 +17,8 @@
 		8E447C002BBD52DF009B0FBF /* Hi_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E447BFF2BBD52DF009B0FBF /* Hi_SwiftUITests.swift */; };
 		8E447C0A2BBD52DF009B0FBF /* Hi_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E447C092BBD52DF009B0FBF /* Hi_SwiftUIUITests.swift */; };
 		8E447C0C2BBD52DF009B0FBF /* Hi_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E447C0B2BBD52DF009B0FBF /* Hi_SwiftUIUITestsLaunchTests.swift */; };
+		8E741B872DA6751600DC90BE /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E741B862DA6751400DC90BE /* CarouselView.swift */; };
+		8E741B892DA7A07D00DC90BE /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E741B882DA7A07800DC90BE /* String.swift */; };
 		8E778D322D8D367500F18D1D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E778D312D8D367500F18D1D /* Colors.swift */; };
 		8E778D352D8D46CB00F18D1D /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E778D342D8D46CB00F18D1D /* Const.swift */; };
 		8E778D372D8D5CD100F18D1D /* HiListAppModuleRespModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E778D362D8D5CD100F18D1D /* HiListAppModuleRespModel.swift */; };
@@ -62,6 +65,7 @@
 		20A25A8769588E211262E118 /* Pods-Hi-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hi-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-Hi-SwiftUI/Pods-Hi-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		8E0A097B2D880DD100044ADD /* HiJsonLoadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiJsonLoadHelper.swift; sourceTree = "<group>"; };
 		8E0A097C2D880DD100044ADD /* HiJsonStrHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiJsonStrHelper.swift; sourceTree = "<group>"; };
+		8E3887E92D969B5E00627AAE /* HealthCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCodeView.swift; sourceTree = "<group>"; };
 		8E447BEB2BBD52DE009B0FBF /* Hi-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hi-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E447BEE2BBD52DE009B0FBF /* Hi_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hi_SwiftUIApp.swift; sourceTree = "<group>"; };
 		8E447BF02BBD52DE009B0FBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 		8E447C052BBD52DF009B0FBF /* Hi-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hi-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E447C092BBD52DF009B0FBF /* Hi_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hi_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		8E447C0B2BBD52DF009B0FBF /* Hi_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hi_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8E741B862DA6751400DC90BE /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		8E741B882DA7A07800DC90BE /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		8E778D312D8D367500F18D1D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8E778D342D8D46CB00F18D1D /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		8E778D362D8D5CD100F18D1D /* HiListAppModuleRespModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiListAppModuleRespModel.swift; sourceTree = "<group>"; };
@@ -157,6 +163,15 @@
 			path = HiJson;
 			sourceTree = "<group>";
 		};
+		8E3887E82D969B2E00627AAE /* HealthCode */ = {
+			isa = PBXGroup;
+			children = (
+				8E741B862DA6751400DC90BE /* CarouselView.swift */,
+				8E3887E92D969B5E00627AAE /* HealthCodeView.swift */,
+			);
+			path = HealthCode;
+			sourceTree = "<group>";
+		};
 		8E447BE22BBD52DE009B0FBF = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +235,7 @@
 		8E778D302D8D365C00F18D1D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8E741B882DA7A07800DC90BE /* String.swift */,
 				8E778D312D8D367500F18D1D /* Colors.swift */,
 			);
 			path = Extensions;
@@ -288,6 +304,7 @@
 		8ECA6FD52D840E3200EBA4D3 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				8E3887E82D969B2E00627AAE /* HealthCode */,
 				8ECA6FC42D84039900EBA4D3 /* SendRequestView.swift */,
 				8E447BF02BBD52DE009B0FBF /* ContentView.swift */,
 				8EC1C13A2D894F4D000EB8B4 /* MockView.swift */,
@@ -477,7 +494,10 @@
 				8E778D352D8D46CB00F18D1D /* Const.swift in Sources */,
 				8ECA6FE42D8426B300EBA4D3 /* HiUnitCfgRespModel.swift in Sources */,
 				8E778D372D8D5CD100F18D1D /* HiListAppModuleRespModel.swift in Sources */,
+				8E741B872DA6751600DC90BE /* CarouselView.swift in Sources */,
+				8E3887EA2D969B5E00627AAE /* HealthCodeView.swift in Sources */,
 				8ECA6FD12D840E1F00EBA4D3 /* HiApiConfig.swift in Sources */,
+				8E741B892DA7A07D00DC90BE /* String.swift in Sources */,
 				8E7DC9CB2D8C0FFB00C03891 /* ElecCertView.swift in Sources */,
 				8E84EE042D91022600BD90E7 /* CardView.swift in Sources */,
 				8E778D322D8D367500F18D1D /* Colors.swift in Sources */,

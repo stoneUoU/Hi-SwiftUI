@@ -118,7 +118,7 @@ struct TaxView: View {
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 8)
-                            .frame(width: deviceWidth - 32,height: 90)
+                            .frame(width: HiSCREENWIDTH - 32,height: 90)
                             .foregroundColor(Color(hex:"#F2F6FE"))
 //                            .overlay(
 //                                RoundedRectangle(cornerRadius: 8)
@@ -162,7 +162,7 @@ struct TaxView: View {
                     }.frame(width: (UIScreen.main.bounds.width-32)/2,height: 64)
                 }.frame(width: UIScreen.main.bounds.width - 32,height: 64)
             }
-        }.frame(width: deviceWidth,height: 90)
+        }.frame(width: HiSCREENWIDTH,height: 90)
     }
 }
 
@@ -200,8 +200,8 @@ struct NoticeView: View {
                     .resizable().frame(width: 13,
                                        height: 12,
                                        alignment: .center).padding(.horizontal,12)
-            }.frame(width: deviceWidth-32)
-        }.frame(width: deviceWidth,height: 88)
+            }.frame(width: HiSCREENWIDTH-32)
+        }.frame(width: HiSCREENWIDTH,height: 88)
     }
 }
 

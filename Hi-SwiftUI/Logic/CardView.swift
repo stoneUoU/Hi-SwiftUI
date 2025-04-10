@@ -34,10 +34,10 @@ struct CardItemView: View {
                             .font(.system(size: 14, weight: .thin, design: .serif))
                         .foregroundColor(Color.white)
                         .padding(EdgeInsets(top: 0, leading: 0, bottom: 24, trailing: 0))
-                    }.frame(width: (deviceWidth - 32)/3, height: 108)
+                    }.frame(width: (HiSCREENWIDTH - 32)/3, height: 108)
                 }
             }
-        }.frame(width: deviceWidth - 32).background(
+        }.frame(width: HiSCREENWIDTH - 32).background(
             RoundedRectangle(cornerRadius: 8)
                 .fill(backgroundColor) // 设置背景色为白色
                 .shadow(color: .black.opacity(0.3), radius: 10, x: 0, y: 5) // 添加阴影效果
@@ -94,7 +94,7 @@ struct ApplyView: View {
                         .shadow(color: .black.opacity(0.1), radius: 10, x: 0, y: 5) // 添加阴影效果
                 )
             }.padding(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: 16))
-        }.frame(width: deviceWidth - 32).background(
+        }.frame(width: HiSCREENWIDTH - 32).background(
             RoundedRectangle(cornerRadius: 8)
                 .fill(Color.yellow) // 设置背景色为白色
                 .shadow(color: .black.opacity(0.3), radius: 10, x: 0, y: 5) // 添加阴影效果
@@ -119,7 +119,7 @@ struct CardView: View {
 //        VStack(alignment: .leading,spacing: 0){
 //            ZStack{
 //                RoundedRectangle(cornerRadius: 8)
-//                    .frame(width: deviceWidth - 32,height: 210)
+//                    .frame(width: HiSCREENWIDTH - 32,height: 210)
 //                    .foregroundColor(Color.green)
 //                VStack(alignment: .leading,spacing: 0) {
 //                    HStack(alignment: .top,spacing: 0) {
@@ -151,8 +151,8 @@ struct CardView: View {
 //                                }
 //                            }.frame(width: geometry.size.width/3, height: 108)
 //                        }
-//                    }.frame(width: deviceWidth - 32,height: 108)
-//                }.frame(width: deviceWidth - 32,height: 210)
+//                    }.frame(width: HiSCREENWIDTH - 32,height: 108)
+//                }.frame(width: HiSCREENWIDTH - 32,height: 210)
 //            }
 //        }.onAppear {
 //        }
