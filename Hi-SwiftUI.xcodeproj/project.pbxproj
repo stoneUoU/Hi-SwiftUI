@@ -23,7 +23,7 @@
 		8E778D352D8D46CB00F18D1D /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E778D342D8D46CB00F18D1D /* Const.swift */; };
 		8E778D372D8D5CD100F18D1D /* HiListAppModuleRespModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E778D362D8D5CD100F18D1D /* HiListAppModuleRespModel.swift */; };
 		8E7DC9CB2D8C0FFB00C03891 /* ElecCertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7DC9CA2D8C0FFB00C03891 /* ElecCertView.swift */; };
-		8E84EE042D91022600BD90E7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84EE032D91022600BD90E7 /* CardView.swift */; };
+		8E84EE042D91022600BD90E7 /* PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84EE032D91022600BD90E7 /* PopUpView.swift */; };
 		8EC1C1312D891C20000EB8B4 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1C12C2D891C20000EB8B4 /* NSObject+YYModel.m */; };
 		8EC1C1322D891C20000EB8B4 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1C12E2D891C20000EB8B4 /* YYClassInfo.m */; };
 		8EC1C1342D891C56000EB8B4 /* Hi-SwiftUI-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1C1332D891C56000EB8B4 /* Hi-SwiftUI-Bridging-Header.h */; };
@@ -82,7 +82,7 @@
 		8E778D342D8D46CB00F18D1D /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		8E778D362D8D5CD100F18D1D /* HiListAppModuleRespModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiListAppModuleRespModel.swift; sourceTree = "<group>"; };
 		8E7DC9CA2D8C0FFB00C03891 /* ElecCertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElecCertView.swift; sourceTree = "<group>"; };
-		8E84EE032D91022600BD90E7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		8E84EE032D91022600BD90E7 /* PopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpView.swift; sourceTree = "<group>"; };
 		8EC1C12B2D891C20000EB8B4 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
 		8EC1C12C2D891C20000EB8B4 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
 		8EC1C12D2D891C20000EB8B4 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
@@ -309,7 +309,7 @@
 				8E447BF02BBD52DE009B0FBF /* ContentView.swift */,
 				8EC1C13A2D894F4D000EB8B4 /* MockView.swift */,
 				8E7DC9CA2D8C0FFB00C03891 /* ElecCertView.swift */,
-				8E84EE032D91022600BD90E7 /* CardView.swift */,
+				8E84EE032D91022600BD90E7 /* PopUpView.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -499,7 +499,7 @@
 				8ECA6FD12D840E1F00EBA4D3 /* HiApiConfig.swift in Sources */,
 				8E741B892DA7A07D00DC90BE /* String.swift in Sources */,
 				8E7DC9CB2D8C0FFB00C03891 /* ElecCertView.swift in Sources */,
-				8E84EE042D91022600BD90E7 /* CardView.swift in Sources */,
+				8E84EE042D91022600BD90E7 /* PopUpView.swift in Sources */,
 				8E778D322D8D367500F18D1D /* Colors.swift in Sources */,
 				8ECA6FD22D840E1F00EBA4D3 /* HiApiConfigPlugin.swift in Sources */,
 				8ECA6FD32D840E1F00EBA4D3 /* HiAPIConst.swift in Sources */,
