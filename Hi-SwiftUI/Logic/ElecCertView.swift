@@ -13,106 +13,120 @@ struct ElecCertView: View {
         HStack(alignment: .center,spacing: 0) {
             GeometryReader { geometry in
                 VStack(spacing: 0) {
-                    HStack{
-                        Image("logo_sxyb")
-                            .resizable().frame(width: 163,
-                                               height: 20,
-                                               alignment: .center).padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 0))
-                        Spacer()
-                        Image("logo_bell")
-                            .resizable().frame(width: 20,
-                                               height: 20,
-                                               alignment: .center).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing:16))
-                    }.frame(height: 44)
-                    ZStack {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 12)
-                                            .frame(width: UIScreen.main.bounds.width - 32, height: 164)
-                                            .foregroundColor(.white).padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
-                            
-                        }
-                        VStack(spacing: 0) {
-                            ZStack {
-                                Image("elec_banner")
-                                .resizable()
-                                .frame(width: UIScreen.main.bounds.width - 36,
-                                       height: 125,
-                                       alignment: .center).padding(EdgeInsets(top: 2, leading: 2, bottom: 0, trailing: 2))
-                                ZStack(alignment: Alignment(horizontal: HorizontalAlignment.trailing, vertical: .top)) {
-                                    VStack {
-                                        HStack{
-                                            Image("elec_logo")
-                                                .resizable().frame(width: 44,
-                                                                   height: 44,
-                                                                   alignment: .center).padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 0))
-                                            VStack(alignment: .leading,spacing: 6){
-                                                Text("国家医疗保障局监制")
-                                                    .font(.system(size: 12, weight: .thin, design: .serif))
-                                                    .foregroundColor(Color.gray)
-                                                HStack(alignment: .bottom, spacing: 6){
-                                                    Text("医保码")
-                                                        .font(.system(size: 24, weight: .bold, design: .serif))
-                                                        .foregroundColor(Color.white)
-                                                    Text("医保电子凭证")
-                                                        .font(.system(size: 14, weight: .bold, design: .serif))
-                                                        .foregroundColor(Color.white).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-                                                }
-                                            }
-                                            Spacer()
-                                        }.frame(width: UIScreen.main.bounds.width - 36,height: 60).padding(EdgeInsets(top: 16, leading: 0, bottom: 0, trailing: 0))
-                                        Spacer()
-                                        HStack(alignment: .top) {
-                                            HStack(spacing: 6) {
-                                                Text("张*三  350**********8666")
-                                                    .font(.system(size: 16, weight: .medium))
-                                                    .foregroundColor(Color.white)
-                                                Image("elec_select_right")
-                                                    .resizable().frame(width: 8,
-                                                                       height: 5,
-                                                                       alignment: .center)
-                                            }.padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 0))
-                                            Spacer()
-                                            ZStack {
-                                                Image("elec_ins")
-                                                Text("已参保")
-                                                    .font(.system(size: 12, weight: .medium))
-                                                    .foregroundColor(Color.white)
-                                            }.padding(EdgeInsets(top: 0, leading: 0, bottom: 12, trailing: 0))
-                                        }.frame(width: UIScreen.main.bounds.width - 36,height: 36)
-                                    }.padding(EdgeInsets(top: 2, leading: 0, bottom: 0, trailing: 0))
-                                    ZStack {
-                                        RoundedRectangle(cornerRadius: 12)
-                                                        .frame(width: 88,height: 24)
-                                                        .foregroundColor(Color.clear).overlay(
-                                                            RoundedRectangle(cornerRadius: 12)
-                                                                .stroke(Color.white)
-                                                        )
-                                        HStack{
-                                            Text("厦门市")
-                                                .font(.system(size: 14, weight: .thin, design: .serif))
-                                                .foregroundColor(Color.white)
-                                            Image("elec_select_down")
-                                                .resizable().frame(width: 8,
-                                                                   height: 5,
-                                                                   alignment: .center)
-                                        }
-                                    }.padding(EdgeInsets(top: 34+16, leading: 0, bottom: 0, trailing: 16))
-                                }
-                            }
-                            PersonalYueView()
-                        }
-                    }.frame(width: UIScreen.main.bounds.width - 32, height: 164).padding(EdgeInsets(top: 16, leading: 0, bottom: 0, trailing: 0))
-                    FunctionsView()
-                    TaxView()
-//                    NoticeView()
-                    SpecialView()
-                    HorizontalView()
-                    Spacer()
+                    ElecCertNavigatorView().listRowSeparator(.hidden).listRowInsets(EdgeInsets())
+                    List{
+                        ElecCertShowEcCodeView().listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16)).listRowBackground(Color.clear)
+                        FunctionsView().listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 12, leading: 16, bottom: 0, trailing: 16)).listRowBackground(Color.clear)
+                        TaxView().listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 12, leading: 16, bottom: 0, trailing: 16)).listRowBackground(Color.clear)
+                        NoticeView().listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 12, leading: 16, bottom: 0, trailing: 16)).listRowBackground(Color.clear)
+                        SpecialView().listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 12, leading: 16, bottom: 0, trailing: 16)).listRowBackground(Color.clear)
+                        HorizontalView().listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 12, leading: 16, bottom: 64, trailing: 16)).listRowBackground(Color.clear)
+                    }.listStyle(PlainListStyle.init())
                 }.frame(width: geometry.size.width).background(.green).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
             }
         }
     }
 }
+
+struct ElecCertNavigatorView: View {
+    var body: some View {
+        HStack{
+            Image("logo_sxyb")
+                .resizable().frame(width: 163,
+                                   height: 20,
+                                   alignment: .center).padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 0))
+            Spacer()
+            Image("logo_bell")
+                .resizable().frame(width: 20,
+                                   height: 20,
+                                   alignment: .center).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing:16))
+        }.frame(height: 44)
+    }
+}
+
+struct ElecCertShowEcCodeView: View {
+    var body: some View {
+        ZStack {
+            ZStack {
+                RoundedRectangle(cornerRadius: 12)
+                                .frame(width: UIScreen.main.bounds.width - 32, height: 164)
+                                .foregroundColor(.white).padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
+                
+            }
+            VStack(spacing: 0) {
+                ZStack {
+                    Image("elec_banner")
+                    .resizable()
+                    .frame(width: UIScreen.main.bounds.width - 36,
+                           height: 125,
+                           alignment: .center).padding(EdgeInsets(top: 2, leading: 2, bottom: 0, trailing: 2))
+                    ZStack(alignment: Alignment(horizontal: HorizontalAlignment.trailing, vertical: .top)) {
+                        VStack {
+                            HStack{
+                                Image("elec_logo")
+                                    .resizable().frame(width: 44,
+                                                       height: 44,
+                                                       alignment: .center).padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 0))
+                                VStack(alignment: .leading,spacing: 6){
+                                    Text("国家医疗保障局监制")
+                                        .font(.system(size: 12, weight: .thin, design: .serif))
+                                        .foregroundColor(Color.gray)
+                                    HStack(alignment: .bottom, spacing: 6){
+                                        Text("医保码")
+                                            .font(.system(size: 24, weight: .bold, design: .serif))
+                                            .foregroundColor(Color.white)
+                                        Text("医保电子凭证")
+                                            .font(.system(size: 14, weight: .bold, design: .serif))
+                                            .foregroundColor(Color.white).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                                    }
+                                }
+                                Spacer()
+                            }.frame(width: UIScreen.main.bounds.width - 36,height: 60).padding(EdgeInsets(top: 16, leading: 0, bottom: 0, trailing: 0))
+                            Spacer()
+                            HStack(alignment: .top) {
+                                HStack(spacing: 6) {
+                                    Text("张*三  350**********8666")
+                                        .font(.system(size: 16, weight: .medium))
+                                        .foregroundColor(Color.white)
+                                    Image("elec_select_right")
+                                        .resizable().frame(width: 8,
+                                                           height: 5,
+                                                           alignment: .center)
+                                }.padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 0))
+                                Spacer()
+                                ZStack {
+                                    Image("elec_ins")
+                                    Text("已参保")
+                                        .font(.system(size: 12, weight: .medium))
+                                        .foregroundColor(Color.white)
+                                }.padding(EdgeInsets(top: 0, leading: 0, bottom: 12, trailing: 0))
+                            }.frame(width: UIScreen.main.bounds.width - 36,height: 36)
+                        }.padding(EdgeInsets(top: 2, leading: 0, bottom: 0, trailing: 0))
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 12)
+                                            .frame(width: 88,height: 24)
+                                            .foregroundColor(Color.clear).overlay(
+                                                RoundedRectangle(cornerRadius: 12)
+                                                    .stroke(Color.white)
+                                            )
+                            HStack{
+                                Text("厦门市")
+                                    .font(.system(size: 14, weight: .thin, design: .serif))
+                                    .foregroundColor(Color.white)
+                                Image("elec_select_down")
+                                    .resizable().frame(width: 8,
+                                                       height: 5,
+                                                       alignment: .center)
+                            }
+                        }.padding(EdgeInsets(top: 34+16, leading: 0, bottom: 0, trailing: 16))
+                    }
+                }
+                PersonalYueView()
+            }
+        }.frame(width: UIScreen.main.bounds.width - 32, height: 164).padding(EdgeInsets(top: 16, leading: 0, bottom: 0, trailing: 0))
+    }
+}
+
 
 struct TaxView: View {
     var body: some View {
@@ -162,7 +176,7 @@ struct TaxView: View {
                     }.frame(width: (UIScreen.main.bounds.width-32)/2,height: 64)
                 }.frame(width: UIScreen.main.bounds.width - 32,height: 64)
             }
-        }.frame(width: HiSCREENWIDTH,height: 90)
+        }.frame(width: HiSCREENWIDTH - 32,height: 90)
     }
 }
 
@@ -172,7 +186,6 @@ struct NoticeView: View {
         ZStack{
             Color(hex:"#F0F4FE")
                 .cornerRadius(8)
-                .padding(.horizontal,16)
             HStack(spacing: 0){
                 HStack(alignment: .center){
                     Image("logo_notice")
@@ -201,7 +214,7 @@ struct NoticeView: View {
                                        height: 12,
                                        alignment: .center).padding(.horizontal,12)
             }.frame(width: HiSCREENWIDTH-32)
-        }.frame(width: HiSCREENWIDTH,height: 88)
+        }.frame(width: HiSCREENWIDTH - 32,height: 88)
     }
 }
 
@@ -216,7 +229,7 @@ struct HorizontalView: View {
                 Color.yellow
                     .cornerRadius(8)
             }.frame(width: (UIScreen.main.bounds.width-42)/2,height: 54)
-        }.frame(width: UIScreen.main.bounds.width,height: 54).padding(EdgeInsets(top: 16, leading:0, bottom: 0, trailing: 0))
+        }.frame(width:  HiSCREENWIDTH - 32,height: 54)
     }
 }
 
@@ -238,7 +251,7 @@ struct SpecialView: View {
                         .cornerRadius(8)
                 }.frame(width: (UIScreen.main.bounds.width-42)/2,height: 70)
             }
-        }.frame(width: UIScreen.main.bounds.width,height: 152).padding(EdgeInsets(top: 16, leading:0, bottom: 0, trailing: 0))
+        }.frame(width:  HiSCREENWIDTH - 32,height: 152)
     }
 }
 
@@ -282,7 +295,7 @@ struct FunctionsView: View {
                     }
                 }.frame(width: geometry.size.width/3, height: 108)
             }
-        }.frame(width: UIScreen.main.bounds.width - 32,height: 108).padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
+        }.frame(width: UIScreen.main.bounds.width - 32,height: 108)
     }
 }
 
