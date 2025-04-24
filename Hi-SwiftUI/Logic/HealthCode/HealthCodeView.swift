@@ -37,7 +37,7 @@ struct HiHealthErrorView: View {
             }.padding(EdgeInsets(top: 7, leading: 0, bottom: 0, trailing: 0))
             HStack() {
                 Text("展码失败原因")
-                    .foregroundColor(Color(hex:"#3031338")).font(.system(size: 16, weight: .thin, design: .serif)).fontWeight(.bold).padding(.leading,16)
+                    .foregroundColor(Color(hex:"#303133")).font(.system(size: 16, weight: .thin, design: .serif)).fontWeight(.bold).padding(.leading,16)
                 Spacer()
                 Text("查看更多>").padding(.trailing,16)
                     .foregroundColor(Color(hex:"#3B71E8")).font(.system(size: 14, weight: .thin, design: .serif))

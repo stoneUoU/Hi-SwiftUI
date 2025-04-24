@@ -93,7 +93,7 @@ class HiListAppModuleRespModelHandleGuidePageChildsItemModuStyl: HandyJSON {
 	required init() {}
 }
 
-class HiListAppModuleRespModelHomePage: HandyJSON {
+class HiListAppModuleRespModelHomePage: HandyJSON,ObservableObject {
 	var childs = [HiListAppModuleRespModelHomePageChilds]()
 	var clientType: String?
 	var content: String?

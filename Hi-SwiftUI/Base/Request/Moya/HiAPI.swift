@@ -8,6 +8,7 @@
 
 import Moya
 import SwiftyJSON
+import UIKit
 
 ///超时时长
 private var requestTimeOut: Double = 30
@@ -70,7 +71,18 @@ public struct HiAPI {
                     //如果数据返回成功则直接将结果转为JSON
                     try response.filterSuccessfulStatusCodes()
                     let json = try JSON(response.mapJSON())
-                    successCallback(json)
+                    if (JSON(json)["code"] == 0) {
+                        successCallback(json)
+                    } else {
+                        if (target.needErrorToast) {
+//                            let errorMsg = JSON(json)["message"] ?? "请求异常，请稍候再试";
+//                            DispatchQueue.main.async{
+////                                HiToast().showToast(text:"复制成功",isWhite: false,type:.center)
+//                                let vc:UIViewController = HiPageHelper.fetchCurrentController() ?? UIViewController();
+//                                HiHudToast.show(ctrl: vc, "请求异常，请稍候再试");
+//                            }
+                        }
+                    }
                 }
                 catch let error {
                     //如果数据获取失败，则返回错误状态码

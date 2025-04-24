@@ -10,6 +10,7 @@ import SwiftyJSON
 class HiRequest:ObservableObject {
     @Published var respModel:HiUnitCfgRespModel?
     @Published var settingModel:HiListAppModuleRespModel?
+    @Published var topListModel:HiTopListRespModel?
     
     func fetchDatas(callback:@escaping (_ respModel:HiUnitCfgRespModel)->()) {
         var params = Dictionary<String,Any>();
@@ -36,6 +37,21 @@ class HiRequest:ObservableObject {
             let dataHandyJSON:[String : Any] = JSON(json)["data"].rawValue as! [String : Any];
             if let handyJSON:HiListAppModuleRespModel = HiListAppModuleRespModel.deserialize(from: dataHandyJSON) {
                 self.settingModel = handyJSON;
+                callback(handyJSON);
+            }
+        }, error: { statusCode in
+            callback(HiListAppModuleRespModel());
+        }, failure: { error in
+            callback(HiListAppModuleRespModel());
+        })
+    }
+    
+    func fetchHSATopList(callback:@escaping (_ respModel:Any)->()) {
+        let params = Dictionary<String,Any>();
+        HiAPI.request(.fetchHSATopList(params), success: { json in
+            let dataHandyJSON:[String : Any] = JSON(json)["data"].rawValue as! [String : Any];
+            if let handyJSON:HiTopListRespModel = HiTopListRespModel.deserialize(from: dataHandyJSON) {
+                self.topListModel = handyJSON;
                 callback(handyJSON);
             }
         }, error: { statusCode in

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E09DD732DB9DE19007B304D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD722DB9DE19007B304D /* HomeView.swift */; };
+		8E09DD762DB9E3CB007B304D /* HiPageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD742DB9E3CB007B304D /* HiPageHelper.swift */; };
+		8E09DD7A2DB9E401007B304D /* HiHudToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD772DB9E401007B304D /* HiHudToast.swift */; };
+		8E09DD7B2DB9E401007B304D /* HiToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD782DB9E401007B304D /* HiToast.swift */; };
+		8E09DD7D2DBA1F68007B304D /* HiTopListRespModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD7C2DBA1F68007B304D /* HiTopListRespModel.swift */; };
 		8E0A097E2D880DD100044ADD /* HiJsonLoadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A097B2D880DD100044ADD /* HiJsonLoadHelper.swift */; };
 		8E0A097F2D880DD100044ADD /* HiJsonStrHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A097C2D880DD100044ADD /* HiJsonStrHelper.swift */; };
 		8E3887EA2D969B5E00627AAE /* HealthCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3887E92D969B5E00627AAE /* HealthCodeView.swift */; };
@@ -63,6 +68,11 @@
 		137C2BD1B1A65D0E453D3851 /* Pods_Hi_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hi_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D3FB59FEC51CCD80C78FC4 /* Pods-Hi-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hi-SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-Hi-SwiftUI/Pods-Hi-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		20A25A8769588E211262E118 /* Pods-Hi-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hi-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-Hi-SwiftUI/Pods-Hi-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		8E09DD722DB9DE19007B304D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8E09DD742DB9E3CB007B304D /* HiPageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiPageHelper.swift; sourceTree = "<group>"; };
+		8E09DD772DB9E401007B304D /* HiHudToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiHudToast.swift; sourceTree = "<group>"; };
+		8E09DD782DB9E401007B304D /* HiToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiToast.swift; sourceTree = "<group>"; };
+		8E09DD7C2DBA1F68007B304D /* HiTopListRespModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiTopListRespModel.swift; sourceTree = "<group>"; };
 		8E0A097B2D880DD100044ADD /* HiJsonLoadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiJsonLoadHelper.swift; sourceTree = "<group>"; };
 		8E0A097C2D880DD100044ADD /* HiJsonStrHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiJsonStrHelper.swift; sourceTree = "<group>"; };
 		8E3887E92D969B5E00627AAE /* HealthCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCodeView.swift; sourceTree = "<group>"; };
@@ -146,9 +156,28 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8E09DD752DB9E3CB007B304D /* HiPage */ = {
+			isa = PBXGroup;
+			children = (
+				8E09DD742DB9E3CB007B304D /* HiPageHelper.swift */,
+			);
+			path = HiPage;
+			sourceTree = "<group>";
+		};
+		8E09DD792DB9E401007B304D /* HiToast */ = {
+			isa = PBXGroup;
+			children = (
+				8E09DD772DB9E401007B304D /* HiHudToast.swift */,
+				8E09DD782DB9E401007B304D /* HiToast.swift */,
+			);
+			path = HiToast;
+			sourceTree = "<group>";
+		};
 		8E0A097A2D880DA900044ADD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				8E09DD792DB9E401007B304D /* HiToast */,
+				8E09DD752DB9E3CB007B304D /* HiPage */,
 				8E0A097D2D880DD100044ADD /* HiJson */,
 			);
 			path = Helpers;
@@ -310,6 +339,7 @@
 				8EC1C13A2D894F4D000EB8B4 /* MockView.swift */,
 				8E7DC9CA2D8C0FFB00C03891 /* ElecCertView.swift */,
 				8E84EE032D91022600BD90E7 /* PopUpView.swift */,
+				8E09DD722DB9DE19007B304D /* HomeView.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -319,6 +349,7 @@
 			children = (
 				8E778D362D8D5CD100F18D1D /* HiListAppModuleRespModel.swift */,
 				8ECA6FE32D8426B300EBA4D3 /* HiUnitCfgRespModel.swift */,
+				8E09DD7C2DBA1F68007B304D /* HiTopListRespModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -489,9 +520,12 @@
 				8EC1C1342D891C56000EB8B4 /* Hi-SwiftUI-Bridging-Header.h in Sources */,
 				8EC1C13B2D894F4D000EB8B4 /* MockView.swift in Sources */,
 				8ECA6FC52D8403A600EBA4D3 /* SendRequestView.swift in Sources */,
+				8E09DD732DB9DE19007B304D /* HomeView.swift in Sources */,
 				8E0A097E2D880DD100044ADD /* HiJsonLoadHelper.swift in Sources */,
 				8EC1C1312D891C20000EB8B4 /* NSObject+YYModel.m in Sources */,
 				8E778D352D8D46CB00F18D1D /* Const.swift in Sources */,
+				8E09DD7A2DB9E401007B304D /* HiHudToast.swift in Sources */,
+				8E09DD7B2DB9E401007B304D /* HiToast.swift in Sources */,
 				8ECA6FE42D8426B300EBA4D3 /* HiUnitCfgRespModel.swift in Sources */,
 				8E778D372D8D5CD100F18D1D /* HiListAppModuleRespModel.swift in Sources */,
 				8E741B872DA6751600DC90BE /* CarouselView.swift in Sources */,
@@ -502,7 +536,9 @@
 				8E84EE042D91022600BD90E7 /* PopUpView.swift in Sources */,
 				8E778D322D8D367500F18D1D /* Colors.swift in Sources */,
 				8ECA6FD22D840E1F00EBA4D3 /* HiApiConfigPlugin.swift in Sources */,
+				8E09DD7D2DBA1F68007B304D /* HiTopListRespModel.swift in Sources */,
 				8ECA6FD32D840E1F00EBA4D3 /* HiAPIConst.swift in Sources */,
+				8E09DD762DB9E3CB007B304D /* HiPageHelper.swift in Sources */,
 				8EC1C1322D891C20000EB8B4 /* YYClassInfo.m in Sources */,
 				8ECA6FD42D840E1F00EBA4D3 /* HiAPI.swift in Sources */,
 				8E0A097F2D880DD100044ADD /* HiJsonStrHelper.swift in Sources */,

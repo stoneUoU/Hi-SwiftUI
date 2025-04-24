@@ -18,6 +18,8 @@ protocol HiApiConfigTargetType: TargetType {
     var needLogRequest: Bool { get }
     //是否需要打印响应体:
     var needLogResponse: Bool { get }
+    //是否需要添加errorToast:
+    var needErrorToast: Bool { get }
 }
 
 struct HiApiConfigPlugin: PluginType {
@@ -30,8 +32,10 @@ struct HiApiConfigPlugin: PluginType {
         guard let needLoading = configTarget?.needLoading, needLoading else {
             return request;
         }
-//        let vc:UIViewController = HiPageHelper.fetchCurrentController() ?? UIViewController();
-//        HiHudToast.showHUD(ctrl: vc);
+        DispatchQueue.main.async{
+            let vc:UIViewController = HiPageHelper.fetchCurrentController() ?? UIViewController();
+            HiHudToast.showHUD(ctrl: vc);
+        }
         var request = request;
         request.addValue("this is a accessToken", forHTTPHeaderField: "accessToken");
         return request
@@ -46,8 +50,10 @@ struct HiApiConfigPlugin: PluginType {
         guard let needLoading = configTarget?.needLoading,needLoading else {
             return;
         }
-//        let vc:UIViewController = HiPageHelper.fetchCurrentController() ?? UIViewController();
-//        HiHudToast.hideHUD(ctrl: vc);
+        DispatchQueue.main.async{
+            let vc:UIViewController = HiPageHelper.fetchCurrentController() ?? UIViewController();
+            HiHudToast.hideHUD(ctrl: vc);
+        }
     }
     
     func logRequest(request: URLRequest) {
