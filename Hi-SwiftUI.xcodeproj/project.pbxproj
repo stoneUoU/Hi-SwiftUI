@@ -12,6 +12,16 @@
 		8E09DD7A2DB9E401007B304D /* HiHudToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD772DB9E401007B304D /* HiHudToast.swift */; };
 		8E09DD7B2DB9E401007B304D /* HiToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD782DB9E401007B304D /* HiToast.swift */; };
 		8E09DD7D2DBA1F68007B304D /* HiTopListRespModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD7C2DBA1F68007B304D /* HiTopListRespModel.swift */; };
+		8E09DD802DBB26B2007B304D /* HiDashedLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD7F2DBB26A9007B304D /* HiDashedLine.swift */; };
+		8E09DD832DBB2F7D007B304D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8E09DD822DBB2F7D007B304D /* Kingfisher */; };
+		8E09DD862DBB2FA7007B304D /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 8E09DD852DBB2FA7007B304D /* ObjectMapper */; };
+		8E09DD892DBB2FC7007B304D /* KakaJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 8E09DD882DBB2FC7007B304D /* KakaJSON */; };
+		8E09DD8C2DBB3371007B304D /* HiUnitCfgHandyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD8B2DBB3371007B304D /* HiUnitCfgHandyJSON.swift */; };
+		8E09DD912DBB3400007B304D /* HiUnitCfgKakaJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD8D2DBB3400007B304D /* HiUnitCfgKakaJSON.swift */; };
+		8E09DD922DBB3400007B304D /* HiUnitCfgSwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD8F2DBB3400007B304D /* HiUnitCfgSwiftyJSON.swift */; };
+		8E09DD932DBB3400007B304D /* HiUnitCfgObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD8E2DBB3400007B304D /* HiUnitCfgObjectMapper.swift */; };
+		8E09DD942DBB3400007B304D /* HiUnitCfgYYModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD902DBB3400007B304D /* HiUnitCfgYYModel.swift */; };
+		8E09DD962DBB5910007B304D /* HiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD952DBB590F007B304D /* HiRequest.swift */; };
 		8E0A097E2D880DD100044ADD /* HiJsonLoadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A097B2D880DD100044ADD /* HiJsonLoadHelper.swift */; };
 		8E0A097F2D880DD100044ADD /* HiJsonStrHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A097C2D880DD100044ADD /* HiJsonStrHelper.swift */; };
 		8E3887EA2D969B5E00627AAE /* HealthCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3887E92D969B5E00627AAE /* HealthCodeView.swift */; };
@@ -73,6 +83,13 @@
 		8E09DD772DB9E401007B304D /* HiHudToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiHudToast.swift; sourceTree = "<group>"; };
 		8E09DD782DB9E401007B304D /* HiToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiToast.swift; sourceTree = "<group>"; };
 		8E09DD7C2DBA1F68007B304D /* HiTopListRespModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiTopListRespModel.swift; sourceTree = "<group>"; };
+		8E09DD7F2DBB26A9007B304D /* HiDashedLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiDashedLine.swift; sourceTree = "<group>"; };
+		8E09DD8B2DBB3371007B304D /* HiUnitCfgHandyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiUnitCfgHandyJSON.swift; sourceTree = "<group>"; };
+		8E09DD8D2DBB3400007B304D /* HiUnitCfgKakaJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiUnitCfgKakaJSON.swift; sourceTree = "<group>"; };
+		8E09DD8E2DBB3400007B304D /* HiUnitCfgObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiUnitCfgObjectMapper.swift; sourceTree = "<group>"; };
+		8E09DD8F2DBB3400007B304D /* HiUnitCfgSwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiUnitCfgSwiftyJSON.swift; sourceTree = "<group>"; };
+		8E09DD902DBB3400007B304D /* HiUnitCfgYYModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiUnitCfgYYModel.swift; sourceTree = "<group>"; };
+		8E09DD952DBB590F007B304D /* HiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiRequest.swift; sourceTree = "<group>"; };
 		8E0A097B2D880DD100044ADD /* HiJsonLoadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiJsonLoadHelper.swift; sourceTree = "<group>"; };
 		8E0A097C2D880DD100044ADD /* HiJsonStrHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiJsonStrHelper.swift; sourceTree = "<group>"; };
 		8E3887E92D969B5E00627AAE /* HealthCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCodeView.swift; sourceTree = "<group>"; };
@@ -113,10 +130,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E09DD862DBB2FA7007B304D /* ObjectMapper in Frameworks */,
 				8ECA6FDB2D8416F400EBA4D3 /* SwiftyJSON in Frameworks */,
 				8EF1E2482D81356C0043DDD9 /* RxMoya in Frameworks */,
+				8E09DD832DBB2F7D007B304D /* Kingfisher in Frameworks */,
 				8ECA6FDE2D84178200EBA4D3 /* MBProgressHUD in Frameworks */,
 				8ECA6FE12D84263F00EBA4D3 /* HandyJSON in Frameworks */,
+				8E09DD892DBB2FC7007B304D /* KakaJSON in Frameworks */,
 				8EF1E2462D81356C0043DDD9 /* Moya in Frameworks */,
 				AE9D1EB06DADEE6BC177475E /* Pods_Hi_SwiftUI.framework in Frameworks */,
 			);
@@ -171,6 +191,26 @@
 				8E09DD782DB9E401007B304D /* HiToast.swift */,
 			);
 			path = HiToast;
+			sourceTree = "<group>";
+		};
+		8E09DD7E2DBB269A007B304D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E09DD7F2DBB26A9007B304D /* HiDashedLine.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E09DD8A2DBB3251007B304D /* Jsons */ = {
+			isa = PBXGroup;
+			children = (
+				8E09DD8D2DBB3400007B304D /* HiUnitCfgKakaJSON.swift */,
+				8E09DD8E2DBB3400007B304D /* HiUnitCfgObjectMapper.swift */,
+				8E09DD8F2DBB3400007B304D /* HiUnitCfgSwiftyJSON.swift */,
+				8E09DD902DBB3400007B304D /* HiUnitCfgYYModel.swift */,
+				8E09DD8B2DBB3371007B304D /* HiUnitCfgHandyJSON.swift */,
+			);
+			path = Jsons;
 			sourceTree = "<group>";
 		};
 		8E0A097A2D880DA900044ADD /* Helpers */ = {
@@ -302,6 +342,7 @@
 		8ECA6FC62D840DE100EBA4D3 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				8E09DD7E2DBB269A007B304D /* View */,
 				8E778D332D8D46BE00F18D1D /* Const */,
 				8E778D302D8D365C00F18D1D /* Extensions */,
 				8EC1C12A2D891C02000EB8B4 /* OC */,
@@ -325,6 +366,7 @@
 		8ECA6FCF2D840E1F00EBA4D3 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				8E09DD952DBB590F007B304D /* HiRequest.swift */,
 				8ECA6FCE2D840E1F00EBA4D3 /* Moya */,
 			);
 			path = Request;
@@ -347,6 +389,7 @@
 		8ECA6FE22D8426AA00EBA4D3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8E09DD8A2DBB3251007B304D /* Jsons */,
 				8E778D362D8D5CD100F18D1D /* HiListAppModuleRespModel.swift */,
 				8ECA6FE32D8426B300EBA4D3 /* HiUnitCfgRespModel.swift */,
 				8E09DD7C2DBA1F68007B304D /* HiTopListRespModel.swift */,
@@ -448,6 +491,9 @@
 				8ECA6FD92D8416F400EBA4D3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				8ECA6FDC2D84178200EBA4D3 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
 				8ECA6FDF2D84263F00EBA4D3 /* XCRemoteSwiftPackageReference "HandyJSON" */,
+				8E09DD812DBB2F7D007B304D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				8E09DD842DBB2FA7007B304D /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				8E09DD872DBB2FC7007B304D /* XCRemoteSwiftPackageReference "KakaJSON" */,
 			);
 			productRefGroup = 8E447BEC2BBD52DE009B0FBF /* Products */;
 			projectDirPath = "";
@@ -516,10 +562,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E09DD912DBB3400007B304D /* HiUnitCfgKakaJSON.swift in Sources */,
+				8E09DD922DBB3400007B304D /* HiUnitCfgSwiftyJSON.swift in Sources */,
+				8E09DD932DBB3400007B304D /* HiUnitCfgObjectMapper.swift in Sources */,
+				8E09DD942DBB3400007B304D /* HiUnitCfgYYModel.swift in Sources */,
 				8E447BF12BBD52DE009B0FBF /* ContentView.swift in Sources */,
 				8EC1C1342D891C56000EB8B4 /* Hi-SwiftUI-Bridging-Header.h in Sources */,
 				8EC1C13B2D894F4D000EB8B4 /* MockView.swift in Sources */,
 				8ECA6FC52D8403A600EBA4D3 /* SendRequestView.swift in Sources */,
+				8E09DD962DBB5910007B304D /* HiRequest.swift in Sources */,
 				8E09DD732DB9DE19007B304D /* HomeView.swift in Sources */,
 				8E0A097E2D880DD100044ADD /* HiJsonLoadHelper.swift in Sources */,
 				8EC1C1312D891C20000EB8B4 /* NSObject+YYModel.m in Sources */,
@@ -527,9 +578,11 @@
 				8E09DD7A2DB9E401007B304D /* HiHudToast.swift in Sources */,
 				8E09DD7B2DB9E401007B304D /* HiToast.swift in Sources */,
 				8ECA6FE42D8426B300EBA4D3 /* HiUnitCfgRespModel.swift in Sources */,
+				8E09DD802DBB26B2007B304D /* HiDashedLine.swift in Sources */,
 				8E778D372D8D5CD100F18D1D /* HiListAppModuleRespModel.swift in Sources */,
 				8E741B872DA6751600DC90BE /* CarouselView.swift in Sources */,
 				8E3887EA2D969B5E00627AAE /* HealthCodeView.swift in Sources */,
+				8E09DD8C2DBB3371007B304D /* HiUnitCfgHandyJSON.swift in Sources */,
 				8ECA6FD12D840E1F00EBA4D3 /* HiApiConfig.swift in Sources */,
 				8E741B892DA7A07D00DC90BE /* String.swift in Sources */,
 				8E7DC9CB2D8C0FFB00C03891 /* ElecCertView.swift in Sources */,
@@ -880,6 +933,30 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8E09DD812DBB2F7D007B304D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = exactVersion;
+				version = 8.3.2;
+			};
+		};
+		8E09DD842DBB2FA7007B304D /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper";
+			requirement = {
+				kind = exactVersion;
+				version = 4.4.3;
+			};
+		};
+		8E09DD872DBB2FC7007B304D /* XCRemoteSwiftPackageReference "KakaJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakaopensource/KakaJSON";
+			requirement = {
+				kind = exactVersion;
+				version = 1.1.2;
+			};
+		};
 		8ECA6FD92D8416F400EBA4D3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
@@ -915,6 +992,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8E09DD822DBB2F7D007B304D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E09DD812DBB2F7D007B304D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		8E09DD852DBB2FA7007B304D /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E09DD842DBB2FA7007B304D /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+		8E09DD882DBB2FC7007B304D /* KakaJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E09DD872DBB2FC7007B304D /* XCRemoteSwiftPackageReference "KakaJSON" */;
+			productName = KakaJSON;
+		};
 		8ECA6FDA2D8416F400EBA4D3 /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8ECA6FD92D8416F400EBA4D3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;

@@ -15,7 +15,7 @@ class HiTopListRespModel: HandyJSON,ObservableObject {
 	required init() {}
 }
 
-class HiTopListRespModelList: HandyJSON {
+class HiTopListRespModelList: HandyJSON,ObservableObject {
 	var bizCode: String?
 	var newsId: String?
 	var newsPkId: Int = 0
@@ -28,6 +28,7 @@ class HiTopListRespModelList: HandyJSON {
 	var url: String?
 	var visitCount: String?
 	var visitCountUrl: String?
+    var picUrl: String?
 
 	required init() {}
 }

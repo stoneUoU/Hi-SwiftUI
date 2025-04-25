@@ -111,17 +111,17 @@ extension HiApiConfig:HiApiConfigTargetType {
     public var headers: [String: String]? {
         return [
             "Content-Type": "application/json",
-            "Accept-Language": "zh-Hans-CN;q=1, en-CN;q=0.9",
-            "User-Agent": "HealthCommunity/1.3.7 (iPhone; iOS 15.4.1; Scale/2.00)",
-            "appId": "19E179E5DC29C05E65B90CDE57A1C7E5",
-            "appVersion": "1.3.7",
+//            "Accept-Language": "zh-Hans-CN;q=1, en-CN;q=0.9",
+//            "User-Agent": "HealthCommunity/1.3.7 (iPhone; iOS 15.4.1; Scale/2.00)",
+//            "appId": "19E179E5DC29C05E65B90CDE57A1C7E5",
+            "appVersion": "1.3.17",
             "channel": "app",
             "operateSystem": "iOS",
-            "operateSystemVersion": "15.4.1",
-            "x-tif-nonce": "15.4.1",
-            "x-tif-paasid": "sn7LxDszc7Ib4bOB",
-            "x-tif-signature": "a6ce2d32664636b8383a64017105e8ab9cd71975f543b9b437469aa3d444d4a2",
-            "x-tif-timestamp": "1652165413"
+//            "operateSystemVersion": "15.4.1",
+//            "x-tif-nonce": "15.4.1",
+//            "x-tif-paasid": "sn7LxDszc7Ib4bOB",
+//            "x-tif-signature": "a6ce2d32664636b8383a64017105e8ab9cd71975f543b9b437469aa3d444d4a2",
+//            "x-tif-timestamp": "1652165413"
         ]
     }
     
@@ -159,16 +159,16 @@ extension HiApiConfig:HiApiConfigTargetType {
     public var needLogRequest: Bool {
         switch self {
         case .fetchGetMethod(_),.fetchHomeData(_),.fetchUnitCfg(_),.fetchHSAHomeData(_),.fetchHSATopList(_):
-            return false
-        default:
             return true
+        default:
+            return false
         }
     }
     
     //是否需要打印响应体:
     public var needLogResponse: Bool {
         switch self {
-        case .fetchGetMethod(_),.fetchHomeData(_),.fetchUnitCfg(_),.fetchHSATopList(_):
+        case .fetchGetMethod(_),.fetchHomeData(_),.fetchUnitCfg(_),.fetchHSAHomeData(_),.fetchHSATopList(_):
             return true
         default:
             return false

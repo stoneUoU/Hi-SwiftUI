@@ -1,5 +1,5 @@
 {
-  "originHash" : "f623498ad99a94f65639bba2dc459b01f2e2e9e46c19ed80e6930f83bfb11f36",
+  "originHash" : "bbeb979623e70ea5f08a198520873eaba4768dacc1e87a546be2c97c4572070f",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -20,6 +20,24 @@
       }
     },
     {
+      "identity" : "kakajson",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kakaopensource/KakaJSON",
+      "state" : {
+        "revision" : "88d8587a90b8efaac9228baee3a759c25f8a6dd3",
+        "version" : "1.1.2"
+      }
+    },
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher",
+      "state" : {
+        "revision" : "7deda23bbdca612076c5c315003d8638a08ed0f1",
+        "version" : "8.3.2"
+      }
+    },
+    {
       "identity" : "mbprogresshud",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jdg/MBProgressHUD.git",
@@ -35,6 +53,15 @@
       "state" : {
         "revision" : "c263811c1f3dbf002be9bd83107f7cdc38992b26",
         "version" : "15.0.3"
+      }
+    },
+    {
+      "identity" : "objectmapper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tristanhimmelman/ObjectMapper",
+      "state" : {
+        "revision" : "6021c6035e83a306047348666f6400dc61445d3b",
+        "version" : "4.4.3"
       }
     },
     {
