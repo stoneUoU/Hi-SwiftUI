@@ -17,6 +17,12 @@ class HiRequest:ObservableObject {
     @Published var yyModel:HiUnitCfgYYModel = HiUnitCfgYYModel()
     @Published var handyJSON:HiUnitCfgHandyJSON = HiUnitCfgHandyJSON()
     
+    @Published var hiKakaJSON:HiSiteKakaJSON = HiSiteKakaJSON()
+    @Published var hiObjectMapper:HiSiteObjectMapper?
+    @Published var hiSwiftyJSON:HiSiteSwiftyJSON?
+    @Published var hiYYModel:HiSiteYYModel = HiSiteYYModel()
+    @Published var hiHandyJSON:HiSiteHandyJSON = HiSiteHandyJSON()
+    
     func fetchHSATopList(callback:@escaping (_ respModel:Any)->()) {
         let params = Dictionary<String,Any>();
         HiAPI.request(.fetchHSATopList(params), success: { json in
@@ -47,7 +53,7 @@ class HiRequest:ObservableObject {
             callback(HiListAppModuleRespModel());
         })
     }
-    func fetchDatas(callback:@escaping (_ respModel:HiUnitCfgRespModel)->()) {
+    func fetchDatas(callback:@escaping (_ respModel:Any)->()) {
         var params = Dictionary<String,Any>();
         params["contractVersionQueryDTO"] = ["contractType":4];
         params["noticeTypeParamDTO"] = [:];
@@ -84,10 +90,41 @@ class HiRequest:ObservableObject {
             let dataObjectMapperModel:HiUnitCfgObjectMapperTopListList = dataObjectMapperModels[0];
             self.objectMapper = objectMapperModel;
             
+            callback(params);
         }, error: { statusCode in
-            callback(HiUnitCfgRespModel());
+            callback(params);
         }, failure: { error in
-            callback(HiUnitCfgRespModel());
+            callback(params);
+        })
+    }
+    
+    func fetchSiteDatas(callback:@escaping (_ respModel:Any)->()) {
+        let params = Dictionary<String,Any>();
+        HiAPI.request(.fetchSite(params), success: { json in
+            let dataHandyJSON:[String : Any] = JSON(json)["data"].rawValue as! [String : Any];
+            if let handyJSON:HiSiteHandyJSON = HiSiteHandyJSON.deserialize(from: dataHandyJSON) {
+                self.hiHandyJSON = handyJSON;
+                print(handyJSON.toJSON() ?? "")
+            }
+            
+            let swiftyJSON:HiSiteSwiftyJSON = HiSiteSwiftyJSON.init(json: JSON(json)["data"]);
+            self.hiSwiftyJSON = swiftyJSON;
+            
+            let yyModel:HiSiteYYModel = HiSiteYYModel.yy_model(with: JSON(json)["data"].rawValue as! [AnyHashable : Any])!;
+            self.hiYYModel = yyModel;
+            
+            let putJson:[String : Any] = JSON(json)["data"].rawValue as! [String : Any];
+            let kakaModel:HiSiteKakaJSON = putJson.kj.model(HiSiteKakaJSON.self)
+            self.hiKakaJSON = kakaModel;
+            
+            let objectMapperModel:HiSiteObjectMapper = HiSiteObjectMapper(JSON: putJson)!;
+            self.hiObjectMapper = objectMapperModel;
+            
+            callback(params);
+        }, error: { statusCode in
+            callback(params);
+        }, failure: { error in
+            callback(params);
         })
     }
 }

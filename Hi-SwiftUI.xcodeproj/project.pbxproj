@@ -22,8 +22,15 @@
 		8E09DD932DBB3400007B304D /* HiUnitCfgObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD8E2DBB3400007B304D /* HiUnitCfgObjectMapper.swift */; };
 		8E09DD942DBB3400007B304D /* HiUnitCfgYYModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD902DBB3400007B304D /* HiUnitCfgYYModel.swift */; };
 		8E09DD962DBB5910007B304D /* HiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD952DBB590F007B304D /* HiRequest.swift */; };
+		8E09DDA92DBB779F007B304D /* HiNavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DDA82DBB7792007B304D /* HiNavigatorView.swift */; };
 		8E0A097E2D880DD100044ADD /* HiJsonLoadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A097B2D880DD100044ADD /* HiJsonLoadHelper.swift */; };
 		8E0A097F2D880DD100044ADD /* HiJsonStrHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A097C2D880DD100044ADD /* HiJsonStrHelper.swift */; };
+		8E0DAEA32DBDD1C500061D52 /* HiSiteKakaJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DAE9F2DBDD1C500061D52 /* HiSiteKakaJSON.swift */; };
+		8E0DAEA42DBDD1C500061D52 /* HiSiteSwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DAEA12DBDD1C500061D52 /* HiSiteSwiftyJSON.swift */; };
+		8E0DAEA52DBDD1C500061D52 /* HiSiteObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DAEA02DBDD1C500061D52 /* HiSiteObjectMapper.swift */; };
+		8E0DAEA62DBDD1C500061D52 /* HiSiteYYModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DAEA22DBDD1C500061D52 /* HiSiteYYModel.swift */; };
+		8E0DAEA72DBDD1C500061D52 /* HiSiteHandyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DAE9E2DBDD1C500061D52 /* HiSiteHandyJSON.swift */; };
+		8E0DAEA92DBDFBE900061D52 /* SiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DAEA82DBDFBE900061D52 /* SiteView.swift */; };
 		8E3887EA2D969B5E00627AAE /* HealthCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3887E92D969B5E00627AAE /* HealthCodeView.swift */; };
 		8E447BEF2BBD52DE009B0FBF /* Hi_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E447BEE2BBD52DE009B0FBF /* Hi_SwiftUIApp.swift */; };
 		8E447BF12BBD52DE009B0FBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E447BF02BBD52DE009B0FBF /* ContentView.swift */; };
@@ -90,8 +97,15 @@
 		8E09DD8F2DBB3400007B304D /* HiUnitCfgSwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiUnitCfgSwiftyJSON.swift; sourceTree = "<group>"; };
 		8E09DD902DBB3400007B304D /* HiUnitCfgYYModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiUnitCfgYYModel.swift; sourceTree = "<group>"; };
 		8E09DD952DBB590F007B304D /* HiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiRequest.swift; sourceTree = "<group>"; };
+		8E09DDA82DBB7792007B304D /* HiNavigatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiNavigatorView.swift; sourceTree = "<group>"; };
 		8E0A097B2D880DD100044ADD /* HiJsonLoadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiJsonLoadHelper.swift; sourceTree = "<group>"; };
 		8E0A097C2D880DD100044ADD /* HiJsonStrHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiJsonStrHelper.swift; sourceTree = "<group>"; };
+		8E0DAE9E2DBDD1C500061D52 /* HiSiteHandyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiSiteHandyJSON.swift; sourceTree = "<group>"; };
+		8E0DAE9F2DBDD1C500061D52 /* HiSiteKakaJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiSiteKakaJSON.swift; sourceTree = "<group>"; };
+		8E0DAEA02DBDD1C500061D52 /* HiSiteObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiSiteObjectMapper.swift; sourceTree = "<group>"; };
+		8E0DAEA12DBDD1C500061D52 /* HiSiteSwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiSiteSwiftyJSON.swift; sourceTree = "<group>"; };
+		8E0DAEA22DBDD1C500061D52 /* HiSiteYYModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiSiteYYModel.swift; sourceTree = "<group>"; };
+		8E0DAEA82DBDFBE900061D52 /* SiteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteView.swift; sourceTree = "<group>"; };
 		8E3887E92D969B5E00627AAE /* HealthCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCodeView.swift; sourceTree = "<group>"; };
 		8E447BEB2BBD52DE009B0FBF /* Hi-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hi-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E447BEE2BBD52DE009B0FBF /* Hi_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hi_SwiftUIApp.swift; sourceTree = "<group>"; };
@@ -230,6 +244,18 @@
 				8E0A097C2D880DD100044ADD /* HiJsonStrHelper.swift */,
 			);
 			path = HiJson;
+			sourceTree = "<group>";
+		};
+		8E0DAE9D2DBDD12B00061D52 /* Sites */ = {
+			isa = PBXGroup;
+			children = (
+				8E0DAE9E2DBDD1C500061D52 /* HiSiteHandyJSON.swift */,
+				8E0DAE9F2DBDD1C500061D52 /* HiSiteKakaJSON.swift */,
+				8E0DAEA02DBDD1C500061D52 /* HiSiteObjectMapper.swift */,
+				8E0DAEA12DBDD1C500061D52 /* HiSiteSwiftyJSON.swift */,
+				8E0DAEA22DBDD1C500061D52 /* HiSiteYYModel.swift */,
+			);
+			path = Sites;
 			sourceTree = "<group>";
 		};
 		8E3887E82D969B2E00627AAE /* HealthCode */ = {
@@ -375,6 +401,7 @@
 		8ECA6FD52D840E3200EBA4D3 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				8E09DDA82DBB7792007B304D /* HiNavigatorView.swift */,
 				8E3887E82D969B2E00627AAE /* HealthCode */,
 				8ECA6FC42D84039900EBA4D3 /* SendRequestView.swift */,
 				8E447BF02BBD52DE009B0FBF /* ContentView.swift */,
@@ -382,6 +409,7 @@
 				8E7DC9CA2D8C0FFB00C03891 /* ElecCertView.swift */,
 				8E84EE032D91022600BD90E7 /* PopUpView.swift */,
 				8E09DD722DB9DE19007B304D /* HomeView.swift */,
+				8E0DAEA82DBDFBE900061D52 /* SiteView.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -389,6 +417,7 @@
 		8ECA6FE22D8426AA00EBA4D3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8E0DAE9D2DBDD12B00061D52 /* Sites */,
 				8E09DD8A2DBB3251007B304D /* Jsons */,
 				8E778D362D8D5CD100F18D1D /* HiListAppModuleRespModel.swift */,
 				8ECA6FE32D8426B300EBA4D3 /* HiUnitCfgRespModel.swift */,
@@ -585,6 +614,7 @@
 				8E09DD8C2DBB3371007B304D /* HiUnitCfgHandyJSON.swift in Sources */,
 				8ECA6FD12D840E1F00EBA4D3 /* HiApiConfig.swift in Sources */,
 				8E741B892DA7A07D00DC90BE /* String.swift in Sources */,
+				8E0DAEA92DBDFBE900061D52 /* SiteView.swift in Sources */,
 				8E7DC9CB2D8C0FFB00C03891 /* ElecCertView.swift in Sources */,
 				8E84EE042D91022600BD90E7 /* PopUpView.swift in Sources */,
 				8E778D322D8D367500F18D1D /* Colors.swift in Sources */,
@@ -592,6 +622,12 @@
 				8E09DD7D2DBA1F68007B304D /* HiTopListRespModel.swift in Sources */,
 				8ECA6FD32D840E1F00EBA4D3 /* HiAPIConst.swift in Sources */,
 				8E09DD762DB9E3CB007B304D /* HiPageHelper.swift in Sources */,
+				8E0DAEA32DBDD1C500061D52 /* HiSiteKakaJSON.swift in Sources */,
+				8E0DAEA42DBDD1C500061D52 /* HiSiteSwiftyJSON.swift in Sources */,
+				8E0DAEA52DBDD1C500061D52 /* HiSiteObjectMapper.swift in Sources */,
+				8E0DAEA62DBDD1C500061D52 /* HiSiteYYModel.swift in Sources */,
+				8E0DAEA72DBDD1C500061D52 /* HiSiteHandyJSON.swift in Sources */,
+				8E09DDA92DBB779F007B304D /* HiNavigatorView.swift in Sources */,
 				8EC1C1322D891C20000EB8B4 /* YYClassInfo.m in Sources */,
 				8ECA6FD42D840E1F00EBA4D3 /* HiAPI.swift in Sources */,
 				8E0A097F2D880DD100044ADD /* HiJsonStrHelper.swift in Sources */,

@@ -14,7 +14,7 @@ struct Hi_SwiftUIApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HomeView().environmentObject(settings)
+            SiteView().environmentObject(settings)
         }
     }
 }

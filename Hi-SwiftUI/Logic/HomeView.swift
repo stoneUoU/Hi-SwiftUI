@@ -214,7 +214,7 @@ struct HiCollectionWalletView: View {
             TabView(selection: $index) {
                 ForEach (0..<(respModel.childs.count)) { i in
                     KFImage(URL(string:respModel.childs[i].imgUrl ?? (respModel.childs[i].item?.imgUrl ?? "")))
-                        .resizable().frame(width: HiSCREENWIDTH-32,height: 88).background(Color.white)
+                        .resizable().background(Color.white)
                 }
             }
             .frame(width: HiSCREENWIDTH-32,height: 88).background(
@@ -224,10 +224,10 @@ struct HiCollectionWalletView: View {
             )
             .clipShape(RoundedRectangle(cornerRadius: 8))
             .tabViewStyle(PageTabViewStyle())
-            .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .automatic))
+            .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
             .onReceive(timer) { _ in
                 withAnimation {
-                    index = index < 5 ? index + 1 : 0
+                    index = index < respModel.childs.count ? index + 1 : 0
                 }
             }
         }
@@ -249,9 +249,11 @@ struct HiCollectionVoucherView: View {
                 }
                 LazyVGrid(columns: cols, spacing: 10) {
                      ForEach((0..<3), id: \.self) {index in
-                         VStack(){}.frame(width: (HiSCREENWIDTH-72)/3,height:88)
-                             .background(Color.red)
-                             .cornerRadius(5)
+//                         NavigationLink(destination: ElecCertView()) {
+                             VStack(){}.frame(width: (HiSCREENWIDTH-72)/3,height:88)
+                                 .background(Color.red)
+                                 .cornerRadius(5)
+//                         }
                      }
                 }.padding(EdgeInsets(top: 16, leading: 0, bottom: 0, trailing: 0))
             }.padding(EdgeInsets(top: 16, leading: 10, bottom: 0, trailing: 10))

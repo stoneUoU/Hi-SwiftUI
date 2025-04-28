@@ -32,6 +32,9 @@ public enum HiApiConfig {
     
     //获取国家医保首页最新动态：
     case fetchHSATopList([String : Any])
+    
+    //获取地方专区接口数据：
+    case fetchSite([String : Any])
 }
 
 //请求配置
@@ -39,7 +42,7 @@ extension HiApiConfig:HiApiConfigTargetType {
     //服务器地址
     public var baseURL: URL {
         switch self {
-            case .fetchUnitCfg(_),.fetchHSATopList(_),.fetchHSAHomeData(_):
+        case .fetchUnitCfg(_),.fetchHSATopList(_),.fetchHSAHomeData(_),.fetchSite(_):
                 return URL(string: HiHSARequestSwiftURL)!
             default:
                 return URL(string: HiRequestSwiftURL)!
@@ -64,6 +67,8 @@ extension HiApiConfig:HiApiConfigTargetType {
             return "/base/api/bmgt/appChnlHolder/listAppModule"
         case .fetchHSATopList(_):
             return "/base/api/news/topList"
+        case .fetchSite(_):
+            return "/base/api/applet/provinces"
         }
     }
     public var method: Moya.Method {
@@ -89,7 +94,7 @@ extension HiApiConfig:HiApiConfigTargetType {
             params = paras
             return .requestParameters(parameters: params,
                                       encoding: JSONEncoding.default)
-        case .fetchUnitCfg(let paras),.fetchHSAHomeData(let paras),.fetchHSATopList(let paras):
+        case .fetchUnitCfg(let paras),.fetchHSAHomeData(let paras),.fetchHSATopList(let paras),.fetchSite(let paras):
             var params: [String: Any] = ["appId":"19E179E5DC29C05E65B90CDE57A1C7E5","encType":"plain","signType":"plain","timestamp":"1652165413","transType":"ec.queryCode","version":"1.0.0"];
             params["data"] = paras
             return .requestParameters(parameters: params,
@@ -111,24 +116,24 @@ extension HiApiConfig:HiApiConfigTargetType {
     public var headers: [String: String]? {
         return [
             "Content-Type": "application/json",
-//            "Accept-Language": "zh-Hans-CN;q=1, en-CN;q=0.9",
-//            "User-Agent": "HealthCommunity/1.3.7 (iPhone; iOS 15.4.1; Scale/2.00)",
-//            "appId": "19E179E5DC29C05E65B90CDE57A1C7E5",
+            "Accept-Language": "zh-Hans-CN;q=1, en-CN;q=0.9",
+            "User-Agent": "HealthCommunity/1.3.7 (iPhone; iOS 15.4.1; Scale/2.00)",
+            "appId": "19E179E5DC29C05E65B90CDE57A1C7E5",
             "appVersion": "1.3.17",
             "channel": "app",
             "operateSystem": "iOS",
-//            "operateSystemVersion": "15.4.1",
-//            "x-tif-nonce": "15.4.1",
-//            "x-tif-paasid": "sn7LxDszc7Ib4bOB",
-//            "x-tif-signature": "a6ce2d32664636b8383a64017105e8ab9cd71975f543b9b437469aa3d444d4a2",
-//            "x-tif-timestamp": "1652165413"
+            "operateSystemVersion": "15.4.1",
+            "x-tif-nonce": "15.4.1",
+            "x-tif-paasid": "sn7LxDszc7Ib4bOB",
+            "x-tif-signature": "a6ce2d32664636b8383a64017105e8ab9cd71975f543b9b437469aa3d444d4a2",
+            "x-tif-timestamp": "1652165413"
         ]
     }
     
     //是否需要Loading
     public var needLoading: Bool {
         switch self {
-        case .fetchGetMethod(_),.fetchHomeData(_),.fetchUnitCfg(_),.fetchHSAHomeData(_),.fetchHSATopList(_):
+        case .fetchGetMethod(_),.fetchHomeData(_),.fetchUnitCfg(_),.fetchHSAHomeData(_),.fetchHSATopList(_),.fetchSite(_):
             return true
         default:
             return false
@@ -138,7 +143,7 @@ extension HiApiConfig:HiApiConfigTargetType {
     //是否需要Loading
     public var needErrorToast: Bool {
         switch self {
-        case .fetchGetMethod(_),.fetchHomeData(_),.fetchUnitCfg(_),.fetchHSAHomeData(_),.fetchHSATopList(_):
+        case .fetchGetMethod(_),.fetchHomeData(_),.fetchUnitCfg(_),.fetchHSAHomeData(_),.fetchHSATopList(_),.fetchSite(_):
             return true
         default:
             return false
@@ -148,7 +153,7 @@ extension HiApiConfig:HiApiConfigTargetType {
     //是否需要加密:
     public var needEncypted: Bool {
         switch self {
-        case .fetchGetMethod(_),.fetchHomeData(_),.fetchUnitCfg(_),.fetchHSAHomeData(_),.fetchHSATopList(_):
+        case .fetchGetMethod(_),.fetchHomeData(_),.fetchUnitCfg(_),.fetchHSAHomeData(_),.fetchHSATopList(_),.fetchSite(_):
             return true
         default:
             return false
@@ -158,7 +163,7 @@ extension HiApiConfig:HiApiConfigTargetType {
     //是否需要打印请求体:
     public var needLogRequest: Bool {
         switch self {
-        case .fetchGetMethod(_),.fetchHomeData(_),.fetchUnitCfg(_),.fetchHSAHomeData(_),.fetchHSATopList(_):
+        case .fetchGetMethod(_),.fetchHomeData(_),.fetchUnitCfg(_),.fetchHSAHomeData(_),.fetchHSATopList(_),.fetchSite(_):
             return true
         default:
             return false
@@ -168,7 +173,7 @@ extension HiApiConfig:HiApiConfigTargetType {
     //是否需要打印响应体:
     public var needLogResponse: Bool {
         switch self {
-        case .fetchGetMethod(_),.fetchHomeData(_),.fetchUnitCfg(_),.fetchHSAHomeData(_),.fetchHSATopList(_):
+        case .fetchGetMethod(_),.fetchHomeData(_),.fetchUnitCfg(_),.fetchHSAHomeData(_),.fetchHSATopList(_),.fetchSite(_):
             return true
         default:
             return false
