@@ -1,3 +1,31 @@
-PODFILE CHECKSUM: 3e6c2118930aa2145a8e6b3063cafd83667b9e7f
+PODS:
+  - UMCommon (7.5.2):
+    - UMDevice
+  - UMDevice (3.4.0)
+  - UMPush (4.1.3):
+    - UMCommon
+  - UYuMao (1.1.2):
+    - UMCommon
+
+DEPENDENCIES:
+  - UMCommon
+  - UMDevice
+  - UMPush
+  - UYuMao
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - UMCommon
+    - UMDevice
+    - UMPush
+    - UYuMao
+
+SPEC CHECKSUMS:
+  UMCommon: 72513a01ebca2dead52f2112b4d7c6196dbbe412
+  UMDevice: dcdf7ec167387837559d149fbc7d793d984faf82
+  UMPush: 5d4c4c28f050bf3898ddce00210432050cf8aead
+  UYuMao: 92bfc024e97899943546703813b2686af72597d3
+
+PODFILE CHECKSUM: 307e985f6fd10322d1ccfca80a5d0824332808c2
 
 COCOAPODS: 1.15.2

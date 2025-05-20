@@ -1,5 +1,9 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/UMCommon/UMCommon_7.5.2" "${PODS_ROOT}/UMDevice/UMDevice_3.4.0" "${PODS_ROOT}/UMPush/UMPush" "${PODS_ROOT}/UYuMao/UYuMao_1.1.2" "${PODS_XCFRAMEWORKS_BUILD_DIR}/UMCommon" "${PODS_XCFRAMEWORKS_BUILD_DIR}/UMDevice" "${PODS_XCFRAMEWORKS_BUILD_DIR}/UMPush" "${PODS_XCFRAMEWORKS_BUILD_DIR}/UYuMao"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iframework "${PODS_ROOT}/UMCommon/UMCommon_7.5.2" -iframework "${PODS_XCFRAMEWORKS_BUILD_DIR}/UMCommon" -iframework "${PODS_ROOT}/UMDevice/UMDevice_3.4.0" -iframework "${PODS_XCFRAMEWORKS_BUILD_DIR}/UMDevice" -iframework "${PODS_ROOT}/UMPush/UMPush" -iframework "${PODS_XCFRAMEWORKS_BUILD_DIR}/UMPush" -iframework "${PODS_ROOT}/UYuMao/UYuMao_1.1.2" -iframework "${PODS_XCFRAMEWORKS_BUILD_DIR}/UYuMao"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"sqlite3" -l"z" -framework "CoreTelephony" -framework "SystemConfiguration" -framework "UMCommon" -framework "UMDevice" -framework "UMPush" -framework "UYuMao" -framework "UserNotifications"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

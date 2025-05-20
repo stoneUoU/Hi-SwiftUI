@@ -6,44 +6,223 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		09FABB7D06BB8D3958515FB15B4E7971 /* UMCommon */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B9DFAF360CCFE1B494B3ACC8FCE13909 /* Build configuration list for PBXAggregateTarget "UMCommon" */;
+			buildPhases = (
+				1F61E678B6D8F054218E48EE26BCD60C /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				724B927B5EEF7D439DE0E735D6211154 /* PBXTargetDependency */,
+			);
+			name = UMCommon;
+		};
+		0E9476196A0AF8C157A1957006F90A02 /* UMPush */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6DC6F0DC4B8312773C82A301655ABE31 /* Build configuration list for PBXAggregateTarget "UMPush" */;
+			buildPhases = (
+				7CD4CCA9F8921E8F7FD64C3CFEF07D96 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				EE81940EB13CCE34358ACCCCE3F2BB02 /* PBXTargetDependency */,
+			);
+			name = UMPush;
+		};
+		4A3BBFC2C06ED4476BB7E98EEE5D9C7D /* UYuMao */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A5B95D7033DCCBFEB9B4D09994607F7B /* Build configuration list for PBXAggregateTarget "UYuMao" */;
+			buildPhases = (
+				F55DA7FC3A42E866E1DDE01A0F259BF9 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				BAA85B0C9EDE48C3946E53BCE3D30410 /* PBXTargetDependency */,
+			);
+			name = UYuMao;
+		};
+		CEB9AD2C3CFC208BFBE1F22F5EC3E1FC /* UMDevice */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 10F2CE95CAA844F9446F5A7DFBFEA90D /* Build configuration list for PBXAggregateTarget "UMDevice" */;
+			buildPhases = (
+				3796A96720267C2FE596E9848B113081 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = UMDevice;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		44A7351B80A04A68F13F2857ECC4FD93 /* Pods-Hi-SwiftUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90CDB86543C31C694C32EC6ECFD490B3 /* Pods-Hi-SwiftUI-dummy.m */; };
-		74EAB5482A50FDBC032DDC809E293080 /* Pods-Hi-SwiftUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02483153C2EF98DF31ACCD38E27A8574 /* Pods-Hi-SwiftUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A17D783C0081B8C9F8C60E3886F38988 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0F8EB34CF0BEDBE3B1BF2A2F45993641 /* Pods-Hi-SwiftUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BE499AB25B6F5A0247C0016F230827 /* Pods-Hi-SwiftUI-dummy.m */; };
+		49CB9F8BE5D8F1309EC36B0AAC8D5351 /* Pods-Hi-SwiftUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 851947983D9BBC6341B9F77F636BB6A9 /* Pods-Hi-SwiftUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A65375E2BCC8B8E3B0C141372CE00773 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		03DFC3EB5A42AC6399DB312F00892FB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A3BBFC2C06ED4476BB7E98EEE5D9C7D;
+			remoteInfo = UYuMao;
+		};
+		2D7C1F8C2DEE819B5E14DD0694863492 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09FABB7D06BB8D3958515FB15B4E7971;
+			remoteInfo = UMCommon;
+		};
+		7804146777C4130C7717F43192A8EFB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEB9AD2C3CFC208BFBE1F22F5EC3E1FC;
+			remoteInfo = UMDevice;
+		};
+		8FAB7FED4E371BB5F19FE4725CB48F97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEB9AD2C3CFC208BFBE1F22F5EC3E1FC;
+			remoteInfo = UMDevice;
+		};
+		AB3412B8F32FA263AAAF4E7C929325CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E9476196A0AF8C157A1957006F90A02;
+			remoteInfo = UMPush;
+		};
+		DA63D776B65B11BB67AA0A57303BA10C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09FABB7D06BB8D3958515FB15B4E7971;
+			remoteInfo = UMCommon;
+		};
+		FCEFAD0188CDA7F0FC2BBA035E5E2AD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09FABB7D06BB8D3958515FB15B4E7971;
+			remoteInfo = UMCommon;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		02483153C2EF98DF31ACCD38E27A8574 /* Pods-Hi-SwiftUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hi-SwiftUI-umbrella.h"; sourceTree = "<group>"; };
-		1D987F1D7DE3FE151966CF52F66E2A9D /* Pods-Hi-SwiftUI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hi-SwiftUI-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5A84C1E397CF09FDCAD43FDF5EBB2113 /* Pods-Hi-SwiftUI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hi-SwiftUI-acknowledgements.plist"; sourceTree = "<group>"; };
+		01CDB8F7EECC294690111C27B747DD63 /* UMPush.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMPush.debug.xcconfig; sourceTree = "<group>"; };
+		0EEA60CE5F5E5B90918BEA60C1B96865 /* Pods-Hi-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hi-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		17E9D1AF659725402827F3B4DE6F230F /* UMCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMCommon.release.xcconfig; sourceTree = "<group>"; };
+		1868767E5AC800D017641ABAD51EDD34 /* UMDevice-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "UMDevice-xcframeworks.sh"; sourceTree = "<group>"; };
+		19912CB65C9D4AEEDC3F35414C9D6AA1 /* UYuMao-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "UYuMao-xcframeworks.sh"; sourceTree = "<group>"; };
+		201EB5D8EC4765BFE38EF3D93941A0C9 /* Pods-Hi-SwiftUI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hi-SwiftUI-acknowledgements.plist"; sourceTree = "<group>"; };
+		218C1A7A807473B93BAC4F99A9C2D12C /* Pods-Hi-SwiftUI-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hi-SwiftUI-resources.sh"; sourceTree = "<group>"; };
+		3695FB3AE144A6B3D0F08DE54AB06B87 /* UYuMao.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = UYuMao.xcframework; path = UYuMao_1.1.2/UYuMao.xcframework; sourceTree = "<group>"; };
+		42916F544CCEAEE623DBBE69648C90A0 /* UMPush-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "UMPush-xcframeworks.sh"; sourceTree = "<group>"; };
+		4926F00E2F9DC077E6E5F02F6F6BD840 /* UMDevice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMDevice.debug.xcconfig; sourceTree = "<group>"; };
+		4C545349BF74250F827A28FE891378C7 /* UMPush.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMPush.release.xcconfig; sourceTree = "<group>"; };
+		4EF4B4F08D760DC99C87EAF1DEE0C571 /* Pods-Hi-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hi-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		50BE499AB25B6F5A0247C0016F230827 /* Pods-Hi-SwiftUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hi-SwiftUI-dummy.m"; sourceTree = "<group>"; };
+		5103AE3121096EA94AB91B6635644B45 /* Pods-Hi-SwiftUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hi-SwiftUI.modulemap"; sourceTree = "<group>"; };
+		6CE97A5D561A972E296D7A123DF39364 /* Pods-Hi-SwiftUI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hi-SwiftUI-acknowledgements.markdown"; sourceTree = "<group>"; };
 		70559D49F8D937157997D9E1CB3A61FD /* Pods-Hi-SwiftUI */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Hi-SwiftUI"; path = Pods_Hi_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		706CD946BC9B3AE145D5049E907A3D6A /* UYuMao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UYuMao.debug.xcconfig; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		8391F73B303B6DF5776AA8774AFED288 /* Pods-Hi-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hi-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
-		90CDB86543C31C694C32EC6ECFD490B3 /* Pods-Hi-SwiftUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hi-SwiftUI-dummy.m"; sourceTree = "<group>"; };
-		977487784013354D71963C1701DF9212 /* Pods-Hi-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hi-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		801FF01320BD06FDFFB0DB358B818B20 /* UYuMao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UYuMao.release.xcconfig; sourceTree = "<group>"; };
+		851947983D9BBC6341B9F77F636BB6A9 /* Pods-Hi-SwiftUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hi-SwiftUI-umbrella.h"; sourceTree = "<group>"; };
+		95A79E788461ED1E1734C7BF79A4F28D /* Pods-Hi-SwiftUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hi-SwiftUI-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2AD325404082535B6FCF46D6F3506BC /* Pods-Hi-SwiftUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hi-SwiftUI-Info.plist"; sourceTree = "<group>"; };
-		EE19A20B003D76EDC3DDC593ED5F267B /* Pods-Hi-SwiftUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hi-SwiftUI.modulemap"; sourceTree = "<group>"; };
+		B3BF8EA7091F97293A7F31F6024ADDF6 /* UMDevice.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = UMDevice.xcframework; path = UMDevice_3.4.0/UMDevice.xcframework; sourceTree = "<group>"; };
+		C4E6D2E08D37639AD9283EFB56A09ECD /* UMPush.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = UMPush.xcframework; path = UMPush/UMPush.xcframework; sourceTree = "<group>"; };
+		CCAD4E5F1AFC8111210F1B04DEE30C36 /* UMPushResource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = UMPushResource.bundle; path = UMPush/UMPushResource.bundle; sourceTree = "<group>"; };
+		E3DAA37FC4EAAB0A6FAB633B34A3B6D2 /* UMDevice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMDevice.release.xcconfig; sourceTree = "<group>"; };
+		E58178597DA9B22D8243566EBF080DFA /* UMCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMCommon.debug.xcconfig; sourceTree = "<group>"; };
+		E679E1E0A4B0B44F6A9ACB9528251321 /* UMCommon.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = UMCommon.xcframework; path = UMCommon_7.5.2/UMCommon.xcframework; sourceTree = "<group>"; };
+		EB30A705E41A478FD84E2AF281FCC073 /* UMCommon-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "UMCommon-xcframeworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F7910D1D49BEE5A6C3C6941DB94F84AE /* Frameworks */ = {
+		6BD1A84DF72D07B87C888D261939BEBE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A17D783C0081B8C9F8C60E3886F38988 /* Foundation.framework in Frameworks */,
+				A65375E2BCC8B8E3B0C141372CE00773 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F34A72E09F0345A7063A12CCCD7A8C1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CE083F0C69AC679550834C63D0DF8D6 /* Pods-Hi-SwiftUI */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2CE083F0C69AC679550834C63D0DF8D6 /* Pods-Hi-SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				5103AE3121096EA94AB91B6635644B45 /* Pods-Hi-SwiftUI.modulemap */,
+				6CE97A5D561A972E296D7A123DF39364 /* Pods-Hi-SwiftUI-acknowledgements.markdown */,
+				201EB5D8EC4765BFE38EF3D93941A0C9 /* Pods-Hi-SwiftUI-acknowledgements.plist */,
+				50BE499AB25B6F5A0247C0016F230827 /* Pods-Hi-SwiftUI-dummy.m */,
+				95A79E788461ED1E1734C7BF79A4F28D /* Pods-Hi-SwiftUI-Info.plist */,
+				218C1A7A807473B93BAC4F99A9C2D12C /* Pods-Hi-SwiftUI-resources.sh */,
+				851947983D9BBC6341B9F77F636BB6A9 /* Pods-Hi-SwiftUI-umbrella.h */,
+				0EEA60CE5F5E5B90918BEA60C1B96865 /* Pods-Hi-SwiftUI.debug.xcconfig */,
+				4EF4B4F08D760DC99C87EAF1DEE0C571 /* Pods-Hi-SwiftUI.release.xcconfig */,
+			);
+			name = "Pods-Hi-SwiftUI";
+			path = "Target Support Files/Pods-Hi-SwiftUI";
+			sourceTree = "<group>";
+		};
+		3E38956D8EC320074F8EE757FCAF2A79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3695FB3AE144A6B3D0F08DE54AB06B87 /* UYuMao.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		553D4F0C4266955FF0144EBC79D2A73E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				19912CB65C9D4AEEDC3F35414C9D6AA1 /* UYuMao-xcframeworks.sh */,
+				706CD946BC9B3AE145D5049E907A3D6A /* UYuMao.debug.xcconfig */,
+				801FF01320BD06FDFFB0DB358B818B20 /* UYuMao.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UYuMao";
+			sourceTree = "<group>";
+		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		680A0646DF64FD4AB15C1B8148036732 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1868767E5AC800D017641ABAD51EDD34 /* UMDevice-xcframeworks.sh */,
+				4926F00E2F9DC077E6E5F02F6F6BD840 /* UMDevice.debug.xcconfig */,
+				E3DAA37FC4EAAB0A6FAB633B34A3B6D2 /* UMDevice.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UMDevice";
+			sourceTree = "<group>";
+		};
+		720D930EEB051BD219C7177610E43402 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3BF8EA7091F97293A7F31F6024ADDF6 /* UMDevice.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		88ABB4CF306FFEA17AE2E6B464864971 /* Products */ = {
@@ -54,12 +233,49 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A05CD1030A24441BB869C2D1FDF4371C /* Targets Support Files */ = {
+		896C724353DF1382E27DD32DDF2C6A9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E72AC81D0E9D7A3C9983FC7F05C2B43F /* Pods-Hi-SwiftUI */,
+				E679E1E0A4B0B44F6A9ACB9528251321 /* UMCommon.xcframework */,
 			);
-			name = "Targets Support Files";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BB56A8BC674E22C39ABA2FEA6BCC1A1 /* UMDevice */ = {
+			isa = PBXGroup;
+			children = (
+				720D930EEB051BD219C7177610E43402 /* Frameworks */,
+				680A0646DF64FD4AB15C1B8148036732 /* Support Files */,
+			);
+			name = UMDevice;
+			path = UMDevice;
+			sourceTree = "<group>";
+		};
+		A2AAAF3CFC4F0197FD87440EA3069E96 /* UMPush */ = {
+			isa = PBXGroup;
+			children = (
+				A4E618EF48F0EC61DC7F56C27A743627 /* Frameworks */,
+				BF340383AD9111536A197A38A3E4D5EF /* Resources */,
+				D9F7B520A95834614ED25A0CCCAA98E3 /* Support Files */,
+			);
+			name = UMPush;
+			path = UMPush;
+			sourceTree = "<group>";
+		};
+		A4E618EF48F0EC61DC7F56C27A743627 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4E6D2E08D37639AD9283EFB56A09ECD /* UMPush.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF340383AD9111536A197A38A3E4D5EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCAD4E5F1AFC8111210F1B04DEE30C36 /* UMPushResource.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -67,9 +283,32 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D0ABB1D68799D84A95218956C5BD723C /* Pods */,
 				88ABB4CF306FFEA17AE2E6B464864971 /* Products */,
-				A05CD1030A24441BB869C2D1FDF4371C /* Targets Support Files */,
+				1F34A72E09F0345A7063A12CCCD7A8C1 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		CFA7DE0A009431E25D0AB27D606555F8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB30A705E41A478FD84E2AF281FCC073 /* UMCommon-xcframeworks.sh */,
+				E58178597DA9B22D8243566EBF080DFA /* UMCommon.debug.xcconfig */,
+				17E9D1AF659725402827F3B4DE6F230F /* UMCommon.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UMCommon";
+			sourceTree = "<group>";
+		};
+		D0ABB1D68799D84A95218956C5BD723C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB122CD78AECDC3F13B6417357A19DF0 /* UMCommon */,
+				8BB56A8BC674E22C39ABA2FEA6BCC1A1 /* UMDevice */,
+				A2AAAF3CFC4F0197FD87440EA3069E96 /* UMPush */,
+				F5080CFC90EDCB1D351F4238CBF51183 /* UYuMao */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -80,30 +319,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E72AC81D0E9D7A3C9983FC7F05C2B43F /* Pods-Hi-SwiftUI */ = {
+		D9F7B520A95834614ED25A0CCCAA98E3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EE19A20B003D76EDC3DDC593ED5F267B /* Pods-Hi-SwiftUI.modulemap */,
-				1D987F1D7DE3FE151966CF52F66E2A9D /* Pods-Hi-SwiftUI-acknowledgements.markdown */,
-				5A84C1E397CF09FDCAD43FDF5EBB2113 /* Pods-Hi-SwiftUI-acknowledgements.plist */,
-				90CDB86543C31C694C32EC6ECFD490B3 /* Pods-Hi-SwiftUI-dummy.m */,
-				A2AD325404082535B6FCF46D6F3506BC /* Pods-Hi-SwiftUI-Info.plist */,
-				02483153C2EF98DF31ACCD38E27A8574 /* Pods-Hi-SwiftUI-umbrella.h */,
-				977487784013354D71963C1701DF9212 /* Pods-Hi-SwiftUI.debug.xcconfig */,
-				8391F73B303B6DF5776AA8774AFED288 /* Pods-Hi-SwiftUI.release.xcconfig */,
+				42916F544CCEAEE623DBBE69648C90A0 /* UMPush-xcframeworks.sh */,
+				01CDB8F7EECC294690111C27B747DD63 /* UMPush.debug.xcconfig */,
+				4C545349BF74250F827A28FE891378C7 /* UMPush.release.xcconfig */,
 			);
-			name = "Pods-Hi-SwiftUI";
-			path = "Target Support Files/Pods-Hi-SwiftUI";
+			name = "Support Files";
+			path = "../Target Support Files/UMPush";
+			sourceTree = "<group>";
+		};
+		EB122CD78AECDC3F13B6417357A19DF0 /* UMCommon */ = {
+			isa = PBXGroup;
+			children = (
+				896C724353DF1382E27DD32DDF2C6A9F /* Frameworks */,
+				CFA7DE0A009431E25D0AB27D606555F8 /* Support Files */,
+			);
+			name = UMCommon;
+			path = UMCommon;
+			sourceTree = "<group>";
+		};
+		F5080CFC90EDCB1D351F4238CBF51183 /* UYuMao */ = {
+			isa = PBXGroup;
+			children = (
+				3E38956D8EC320074F8EE757FCAF2A79 /* Frameworks */,
+				553D4F0C4266955FF0144EBC79D2A73E /* Support Files */,
+			);
+			name = UYuMao;
+			path = UYuMao;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		EA980C86A9D53E6146283DDB3A6E442F /* Headers */ = {
+		E25FC342F4D9A44FCD42F82F6B57AE55 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74EAB5482A50FDBC032DDC809E293080 /* Pods-Hi-SwiftUI-umbrella.h in Headers */,
+				49CB9F8BE5D8F1309EC36B0AAC8D5351 /* Pods-Hi-SwiftUI-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,16 +366,20 @@
 /* Begin PBXNativeTarget section */
 		47B30F2C3A929621253988C011481FC1 /* Pods-Hi-SwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75FE7990929F51A7FA405DA17080088E /* Build configuration list for PBXNativeTarget "Pods-Hi-SwiftUI" */;
+			buildConfigurationList = 93A9412CFF84AEE4B8E9FCF3DAE9B3B8 /* Build configuration list for PBXNativeTarget "Pods-Hi-SwiftUI" */;
 			buildPhases = (
-				EA980C86A9D53E6146283DDB3A6E442F /* Headers */,
-				E8E07B746AB47C24F21BF2C17FDC684F /* Sources */,
-				F7910D1D49BEE5A6C3C6941DB94F84AE /* Frameworks */,
-				DA6D36FC5C668877DE5DBC5378EF2B2D /* Resources */,
+				E25FC342F4D9A44FCD42F82F6B57AE55 /* Headers */,
+				4E4CE026F75DCAA29F2EC084B90EF4D6 /* Sources */,
+				6BD1A84DF72D07B87C888D261939BEBE /* Frameworks */,
+				1659A5B0B610F381AE304A8B91CDFEEA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				791F4E14958A1F3A147BB578D2284FC3 /* PBXTargetDependency */,
+				C7239C59705EA9808DC5154E8993DAA6 /* PBXTargetDependency */,
+				B9E433EC6082874769493D9C6ABFF636 /* PBXTargetDependency */,
+				34779B1B1C8852AB2791A6A8BC9AECEE /* PBXTargetDependency */,
 			);
 			name = "Pods-Hi-SwiftUI";
 			productName = Pods_Hi_SwiftUI;
@@ -151,12 +409,16 @@
 			projectRoot = "";
 			targets = (
 				47B30F2C3A929621253988C011481FC1 /* Pods-Hi-SwiftUI */,
+				09FABB7D06BB8D3958515FB15B4E7971 /* UMCommon */,
+				CEB9AD2C3CFC208BFBE1F22F5EC3E1FC /* UMDevice */,
+				0E9476196A0AF8C157A1957006F90A02 /* UMPush */,
+				4A3BBFC2C06ED4476BB7E98EEE5D9C7D /* UYuMao */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DA6D36FC5C668877DE5DBC5378EF2B2D /* Resources */ = {
+		1659A5B0B610F381AE304A8B91CDFEEA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -165,21 +427,220 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F61E678B6D8F054218E48EE26BCD60C /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/UMCommon/UMCommon-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/UMCommon/UMCommon-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/UMCommon/UMCommon-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3796A96720267C2FE596E9848B113081 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/UMDevice/UMDevice-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/UMDevice/UMDevice-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/UMDevice/UMDevice-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CD4CCA9F8921E8F7FD64C3CFEF07D96 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/UMPush/UMPush-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/UMPush/UMPush-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/UMPush/UMPush-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F55DA7FC3A42E866E1DDE01A0F259BF9 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/UYuMao/UYuMao-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/UYuMao/UYuMao-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/UYuMao/UYuMao-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		E8E07B746AB47C24F21BF2C17FDC684F /* Sources */ = {
+		4E4CE026F75DCAA29F2EC084B90EF4D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44A7351B80A04A68F13F2857ECC4FD93 /* Pods-Hi-SwiftUI-dummy.m in Sources */,
+				0F8EB34CF0BEDBE3B1BF2A2F45993641 /* Pods-Hi-SwiftUI-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		34779B1B1C8852AB2791A6A8BC9AECEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UYuMao;
+			target = 4A3BBFC2C06ED4476BB7E98EEE5D9C7D /* UYuMao */;
+			targetProxy = 03DFC3EB5A42AC6399DB312F00892FB9 /* PBXContainerItemProxy */;
+		};
+		724B927B5EEF7D439DE0E735D6211154 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UMDevice;
+			target = CEB9AD2C3CFC208BFBE1F22F5EC3E1FC /* UMDevice */;
+			targetProxy = 7804146777C4130C7717F43192A8EFB9 /* PBXContainerItemProxy */;
+		};
+		791F4E14958A1F3A147BB578D2284FC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UMCommon;
+			target = 09FABB7D06BB8D3958515FB15B4E7971 /* UMCommon */;
+			targetProxy = DA63D776B65B11BB67AA0A57303BA10C /* PBXContainerItemProxy */;
+		};
+		B9E433EC6082874769493D9C6ABFF636 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UMPush;
+			target = 0E9476196A0AF8C157A1957006F90A02 /* UMPush */;
+			targetProxy = AB3412B8F32FA263AAAF4E7C929325CA /* PBXContainerItemProxy */;
+		};
+		BAA85B0C9EDE48C3946E53BCE3D30410 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UMCommon;
+			target = 09FABB7D06BB8D3958515FB15B4E7971 /* UMCommon */;
+			targetProxy = 2D7C1F8C2DEE819B5E14DD0694863492 /* PBXContainerItemProxy */;
+		};
+		C7239C59705EA9808DC5154E8993DAA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UMDevice;
+			target = CEB9AD2C3CFC208BFBE1F22F5EC3E1FC /* UMDevice */;
+			targetProxy = 8FAB7FED4E371BB5F19FE4725CB48F97 /* PBXContainerItemProxy */;
+		};
+		EE81940EB13CCE34358ACCCCE3F2BB02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UMCommon;
+			target = 09FABB7D06BB8D3958515FB15B4E7971 /* UMCommon */;
+			targetProxy = FCEFAD0188CDA7F0FC2BBA035E5E2AD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		10CD6955D3959C3F5585B87F7D505C83 /* Debug */ = {
+		1B3C784892125EBE3D35DFE35E834C8C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 977487784013354D71963C1701DF9212 /* Pods-Hi-SwiftUI.debug.xcconfig */;
+			baseConfigurationReference = E3DAA37FC4EAAB0A6FAB633B34A3B6D2 /* UMDevice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22D178B6314BF1983D22B33873A82DC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C545349BF74250F827A28FE891378C7 /* UMPush.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C60C66F142B5C688F9090A0517D0D7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4926F00E2F9DC077E6E5F02F6F6BD840 /* UMDevice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47F5FA5C0B40A88FC95B0453880E28B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17E9D1AF659725402827F3B4DE6F230F /* UMCommon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52176FED39A91892E26A144B8214CB5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 706CD946BC9B3AE145D5049E907A3D6A /* UYuMao.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E4AD3B2E525D4D8087FBA2F7F7E3849 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EF4B4F08D760DC99C87EAF1DEE0C571 /* Pods-Hi-SwiftUI.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -209,10 +670,11 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -342,9 +804,26 @@
 			};
 			name = Debug;
 		};
-		C8ACBCE2A8F8948A067819229E26116C /* Release */ = {
+		BE8D8C82A2CF128378960E3C1A4CFB17 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8391F73B303B6DF5776AA8774AFED288 /* Pods-Hi-SwiftUI.release.xcconfig */;
+			baseConfigurationReference = 801FF01320BD06FDFFB0DB358B818B20 /* UYuMao.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA7FA9EE0565BDB3C2DBE1D9C65AEF70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EEA60CE5F5E5B90918BEA60C1B96865 /* Pods-Hi-SwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -374,15 +853,55 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
+		};
+		CD8A4CBA86DB4A3D4283C97F4AF56223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E58178597DA9B22D8243566EBF080DFA /* UMCommon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEE13099156B2E98A39124E3DD6C596B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01CDB8F7EECC294690111C27B747DD63 /* UMPush.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		10F2CE95CAA844F9446F5A7DFBFEA90D /* Build configuration list for PBXAggregateTarget "UMDevice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C60C66F142B5C688F9090A0517D0D7B /* Debug */,
+				1B3C784892125EBE3D35DFE35E834C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -392,11 +911,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		75FE7990929F51A7FA405DA17080088E /* Build configuration list for PBXNativeTarget "Pods-Hi-SwiftUI" */ = {
+		6DC6F0DC4B8312773C82A301655ABE31 /* Build configuration list for PBXAggregateTarget "UMPush" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				10CD6955D3959C3F5585B87F7D505C83 /* Debug */,
-				C8ACBCE2A8F8948A067819229E26116C /* Release */,
+				FEE13099156B2E98A39124E3DD6C596B /* Debug */,
+				22D178B6314BF1983D22B33873A82DC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93A9412CFF84AEE4B8E9FCF3DAE9B3B8 /* Build configuration list for PBXNativeTarget "Pods-Hi-SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA7FA9EE0565BDB3C2DBE1D9C65AEF70 /* Debug */,
+				8E4AD3B2E525D4D8087FBA2F7F7E3849 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5B95D7033DCCBFEB9B4D09994607F7B /* Build configuration list for PBXAggregateTarget "UYuMao" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52176FED39A91892E26A144B8214CB5B /* Debug */,
+				BE8D8C82A2CF128378960E3C1A4CFB17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9DFAF360CCFE1B494B3ACC8FCE13909 /* Build configuration list for PBXAggregateTarget "UMCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8A4CBA86DB4A3D4283C97F4AF56223 /* Debug */,
+				47F5FA5C0B40A88FC95B0453880E28B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
