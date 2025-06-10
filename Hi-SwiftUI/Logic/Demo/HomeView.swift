@@ -11,45 +11,58 @@ import Kingfisher
 
 struct HomeView: View {
     @StateObject var hiRequest = HiRequest()
+    @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var pathManager: PathManager
     var body: some View {
-        HStack(alignment: .center,spacing: 0) {
-            GeometryReader { geometry in
-                VStack(spacing: 0) {
-                    CollectionNavigatorView().listRowSeparator(.hidden).listRowInsets(EdgeInsets())
-                    if let options:[HiListAppModuleRespModelHomePage] = hiRequest.settingModel?.homePage {
-                        List(options, id: \.key) { item in
-                            if (item.key == "voucher") {
-                                HiCollectionVoucherView().listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 16, trailing: 0)).listRowBackground(Color.clear)
-                            } else if (item.key == "yibao_wallet" || item.key == "notice_activity_top_2" || item.key == "notice_activity_top_1") {
-                                HiCollectionWalletView(respModel:item).listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16)).listRowBackground(Color.clear)
-                            } else if (item.key == "home_common_search_1") {
-                                HiCollectionSearchOneView(respModel: item).listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16)).listRowBackground(Color.clear)
-                            } else if (item.key == "home_common_search_2") {
-                                HiCollectionSearchTwoView(respModel: item).listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16)).listRowBackground(Color.clear)
-                            } else if (item.key == "hot_service") {
-                                HiCollectionHotServiceView(respModel: item).listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16)).listRowBackground(Color.clear)
-                            } else if (item.key == "notice_activity_top_2") {
-                                HiCollectionSearchTwoView(respModel: item).listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16)).listRowBackground(Color.clear)
-                            } else if (item.key == "organization") {
-                                HiCollectionOrganizationView(respModel: item).listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16)).listRowBackground(Color.clear)
-                            } else if (item.key == "tax") {
-                                TaxView().listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16)).listRowBackground(Color.clear)
-                            } else if (item.key == "si_news") {
-                                if let respModel:HiTopListRespModel = hiRequest.topListModel {
-                                    HiCollectionSiNewsView(moduleModel:item,respModel:respModel).listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16)).listRowBackground(Color.clear)
+        NavigationStack(path: $pathManager.path) {
+            HStack(alignment: .center,spacing: 0) {
+                GeometryReader { geometry in
+                    VStack(spacing: 0) {
+                        CollectionNavigatorView(presentMode: _presentationMode).listRowSeparator(.hidden).listRowInsets(EdgeInsets())
+                        if let options:[HiListAppModuleRespModelHomePage] = hiRequest.settingModel?.homePage {
+                            List(options, id: \.key) { item in
+                                if (item.key == "voucher") {
+                                    HiCollectionVoucherView(clickHandle: { number in
+                                        pathManager.path.append(Target.healthCodeView)
+                                    }).listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 16, trailing: 0)).listRowBackground(Color.clear)
+                                } else if (item.key == "yibao_wallet" || item.key == "notice_activity_top_2" || item.key == "notice_activity_top_1") {
+                                    HiCollectionWalletView(respModel:item).listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16)).listRowBackground(Color.clear)
+                                } else if (item.key == "home_common_search_1") {
+                                    HiCollectionSearchOneView(respModel: item).listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16)).listRowBackground(Color.clear)
+                                } else if (item.key == "home_common_search_2") {
+                                    HiCollectionSearchTwoView(respModel: item).listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16)).listRowBackground(Color.clear)
+                                } else if (item.key == "hot_service") {
+                                    HiCollectionHotServiceView(respModel: item).listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16)).listRowBackground(Color.clear)
+                                } else if (item.key == "notice_activity_top_2") {
+                                    HiCollectionSearchTwoView(respModel: item).listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16)).listRowBackground(Color.clear)
+                                } else if (item.key == "organization") {
+                                    HiCollectionOrganizationView(respModel: item).listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16)).listRowBackground(Color.clear)
+                                } else if (item.key == "tax") {
+                                    TaxView().listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16)).listRowBackground(Color.clear)
+                                } else if (item.key == "si_news") {
+                                    if let respModel:HiTopListRespModel = hiRequest.topListModel {
+                                        HiCollectionSiNewsView(moduleModel:item,respModel:respModel).listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16)).listRowBackground(Color.clear)
+                                    }
                                 }
-                            }
-                        }.listStyle(PlainListStyle.init())
-                    } else {
-                        Spacer()
-                    }
-                }.frame(width: geometry.size.width).background(.green).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                            }.listStyle(PlainListStyle.init())
+                        } else {
+                            Spacer()
+                        }
+                    }.frame(width: geometry.size.width).background(.green).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                }
+            }.onAppear {
+                hiRequest.fetchHomeDatas { resp in
+                };
+                hiRequest.fetchHSATopList { resp in
+                };
+            }.navigationDestination(for: Target.self) { route in
+                switch route {
+                case .elecCertView: ElecCertView()
+                case .mockView: MockView()
+                case .healthCodeView: HealthCodeView()
+                case .popUpView:PopUpView()
+                }
             }
-        }.onAppear {
-            hiRequest.fetchHomeDatas { resp in
-            };
-            hiRequest.fetchHSATopList { resp in
-            };
         }
     }
 }
@@ -168,7 +181,6 @@ struct HiCollectionHotServiceView: View {
     }
 }
 
-
 struct HiCollectionSearchTwoView: View {
     var cols: [GridItem] = [GridItem(.fixed((HiSCREENWIDTH-62)/4)),GridItem(.fixed((HiSCREENWIDTH-62)/4)),GridItem(.fixed((HiSCREENWIDTH-62)/4)),GridItem(.fixed((HiSCREENWIDTH-62)/4))];
     @ObservedObject var respModel: HiListAppModuleRespModelHomePage
@@ -235,6 +247,7 @@ struct HiCollectionWalletView: View {
 }
 
 struct HiCollectionVoucherView: View {
+    var clickHandle:((_ number:Int)->Void)?
     var cols: [GridItem] = [GridItem(.fixed((HiSCREENWIDTH-72)/3)),GridItem(.fixed((HiSCREENWIDTH-72)/3)),GridItem(.fixed((HiSCREENWIDTH-72)/3))];
     var body: some View {
         VStack(){
@@ -244,7 +257,10 @@ struct HiCollectionVoucherView: View {
                         RoundedRectangle(cornerRadius: 8)
                             .fill(Color.white) // 设置背景色为白色
                             .shadow(color: .black.opacity(0.3), radius: 10, x: 0, y: 5) // 添加阴影效果
-                    )
+                    ).onTapGesture {
+                        guard let logicHandle = self.clickHandle else { return }
+                        logicHandle(0);
+                    }
                     Text("S w i f t U I 测试").foregroundColor(Color(hex:"#303133")).font(.system(size: 18, weight: .bold, design: .serif))
                 }
                 LazyVGrid(columns: cols, spacing: 10) {
@@ -262,6 +278,7 @@ struct HiCollectionVoucherView: View {
 }
 
 struct CollectionNavigatorView: View {
+    @Environment(\.presentationMode) var presentMode
     var body: some View {
         HStack{
             Image("chs_logo_hsa")
@@ -273,7 +290,9 @@ struct CollectionNavigatorView: View {
             Image("logo_bell")
                 .resizable().frame(width: 20,
                                    height: 20,
-                                   alignment: .center).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing:16))
-        }.frame(height: 44)
+                                   alignment: .center).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing:16)).onTapGesture {
+                    self.presentMode.wrappedValue.dismiss()
+                }
+        }.frame(height: HiNavigationBarH).background(Color.pink)
     }
 }

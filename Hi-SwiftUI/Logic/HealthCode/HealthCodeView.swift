@@ -8,18 +8,22 @@
 import SwiftUI
 
 struct HealthCodeView: View {
+    @EnvironmentObject var pathManager:PathManager
     var body: some View {
         VStack(spacing: 0){
             HiHealthNavigtorCodeView()
             List{
-                HiHealthCodeCertView().listRowSeparator(.hidden).listRowInsets(EdgeInsets())
+                HiHealthCodeCertView(clickHandle: { number in
+                    print("clickHandle-HiHealthCodeCertView");
+                    pathManager.path.append(Target.popUpView)
+                }).listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 16, leading: 0, bottom: 0, trailing: 0))
                 HiHealthCodeShowView().listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                 HiHealthPhoneActiveView().listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 12, leading: 16, bottom: 0, trailing: 16))
                 HiHealthErrorView().listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 12, leading: 16, bottom: 0, trailing: 16))
                 HiHealthFunctionCodeView().listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 12, leading: 16, bottom: 0, trailing: 16))
                 HiHealthHoritzalCodeView().listRowSeparator(.hidden).listRowInsets(EdgeInsets(top: 12, leading: 16, bottom: 0, trailing: 16))
             }.listStyle(PlainListStyle.init())
-        }
+        }.navigationBarBackButtonHidden()
     }
 }
 
@@ -107,6 +111,7 @@ struct HiHealthPhoneActiveView: View {
 
 
 struct HiHealthCodeCertView: View {
+    var clickHandle:((_ number:Int)->Void)?
     var body: some View {
         ZStack(alignment: Alignment(horizontal: HorizontalAlignment.trailing, vertical: .bottom)) {
             ZStack(alignment: Alignment(horizontal: HorizontalAlignment.center, vertical: .bottom)) {
@@ -149,7 +154,10 @@ struct HiHealthCodeCertView: View {
                     .foregroundColor(Color.white).offset(y:-36)
             }
             Image("hsa_qrcode_code").resizable().frame(width: 24, height: 24).offset(x:-32,y:-36)
-        }.frame(width: HiSCREENWIDTH)
+        }.frame(width: HiSCREENWIDTH).onTapGesture {
+            guard let logicHandle = self.clickHandle else { return }
+            logicHandle(0);
+        }
     }
 }
 
@@ -232,6 +240,8 @@ struct HiHealthHoritzalCodeView: View {
 }
 
 struct HiHealthNavigtorCodeView: View {
+    @EnvironmentObject var pathManager:PathManager
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         HStack() {
             HStack{
@@ -242,9 +252,12 @@ struct HiHealthNavigtorCodeView: View {
                 Text("返回")
                     .font(.system(size: 16, weight: .medium, design: .serif))
                     .foregroundColor(Color.white)
+            }.padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 0)).onTapGesture {
+                print("path.count");
+                pathManager.path.removeLast() // 返回根视图
             }
             Spacer()
-        }.frame(width: HiSCREENWIDTH).frame(height: HiNavigationBarH)
+        }.frame(width: HiSCREENWIDTH).frame(height: HiNavigationBarH).background(Color.pink)
     }
 }
 

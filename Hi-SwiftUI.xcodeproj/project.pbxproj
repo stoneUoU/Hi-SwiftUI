@@ -22,7 +22,7 @@
 		8E09DD932DBB3400007B304D /* HiUnitCfgObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD8E2DBB3400007B304D /* HiUnitCfgObjectMapper.swift */; };
 		8E09DD942DBB3400007B304D /* HiUnitCfgYYModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD902DBB3400007B304D /* HiUnitCfgYYModel.swift */; };
 		8E09DD962DBB5910007B304D /* HiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DD952DBB590F007B304D /* HiRequest.swift */; };
-		8E09DDA92DBB779F007B304D /* HiNavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DDA82DBB7792007B304D /* HiNavigatorView.swift */; };
+		8E09DDA92DBB779F007B304D /* HiNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E09DDA82DBB7792007B304D /* HiNavigator.swift */; };
 		8E0A097E2D880DD100044ADD /* HiJsonLoadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A097B2D880DD100044ADD /* HiJsonLoadHelper.swift */; };
 		8E0A097F2D880DD100044ADD /* HiJsonStrHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A097C2D880DD100044ADD /* HiJsonStrHelper.swift */; };
 		8E0B1DDA2DDC1BAA00C9E6FC /* OCProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0B1DD92DDC1BAA00C9E6FC /* OCProject.m */; };
@@ -34,6 +34,8 @@
 		8E0DAEA72DBDD1C500061D52 /* HiSiteHandyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DAE9E2DBDD1C500061D52 /* HiSiteHandyJSON.swift */; };
 		8E0DAEA92DBDFBE900061D52 /* SiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DAEA82DBDFBE900061D52 /* SiteView.swift */; };
 		8E3887EA2D969B5E00627AAE /* HealthCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3887E92D969B5E00627AAE /* HealthCodeView.swift */; };
+		8E3F56DC2DF810BD00815C4C /* HrssHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3F56DB2DF810A800815C4C /* HrssHomeView.swift */; };
+		8E3F56DE2DF8242E00815C4C /* HrssModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3F56DD2DF8242600815C4C /* HrssModel.swift */; };
 		8E447BEF2BBD52DE009B0FBF /* Hi_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E447BEE2BBD52DE009B0FBF /* Hi_SwiftUIApp.swift */; };
 		8E447BF12BBD52DE009B0FBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E447BF02BBD52DE009B0FBF /* ContentView.swift */; };
 		8E447BF32BBD52DF009B0FBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E447BF22BBD52DF009B0FBF /* Assets.xcassets */; };
@@ -99,7 +101,7 @@
 		8E09DD8F2DBB3400007B304D /* HiUnitCfgSwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiUnitCfgSwiftyJSON.swift; sourceTree = "<group>"; };
 		8E09DD902DBB3400007B304D /* HiUnitCfgYYModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiUnitCfgYYModel.swift; sourceTree = "<group>"; };
 		8E09DD952DBB590F007B304D /* HiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiRequest.swift; sourceTree = "<group>"; };
-		8E09DDA82DBB7792007B304D /* HiNavigatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiNavigatorView.swift; sourceTree = "<group>"; };
+		8E09DDA82DBB7792007B304D /* HiNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiNavigator.swift; sourceTree = "<group>"; };
 		8E0A097B2D880DD100044ADD /* HiJsonLoadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiJsonLoadHelper.swift; sourceTree = "<group>"; };
 		8E0A097C2D880DD100044ADD /* HiJsonStrHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiJsonStrHelper.swift; sourceTree = "<group>"; };
 		8E0B1DD82DDC1BAA00C9E6FC /* OCProject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCProject.h; sourceTree = "<group>"; };
@@ -114,6 +116,8 @@
 		8E0DAEA82DBDFBE900061D52 /* SiteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteView.swift; sourceTree = "<group>"; };
 		8E1C04F12DDC14E300D949EC /* Hi-SwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hi-SwiftUI.entitlements"; sourceTree = "<group>"; };
 		8E3887E92D969B5E00627AAE /* HealthCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCodeView.swift; sourceTree = "<group>"; };
+		8E3F56DB2DF810A800815C4C /* HrssHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssHomeView.swift; sourceTree = "<group>"; };
+		8E3F56DD2DF8242600815C4C /* HrssModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssModel.swift; sourceTree = "<group>"; };
 		8E447BEB2BBD52DE009B0FBF /* Hi-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hi-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E447BEE2BBD52DE009B0FBF /* Hi_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hi_SwiftUIApp.swift; sourceTree = "<group>"; };
 		8E447BF02BBD52DE009B0FBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -257,7 +261,7 @@
 		8E0B1DDF2DDC1DFA00C9E6FC /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				8E09DDA82DBB7792007B304D /* HiNavigatorView.swift */,
+				8E09DDA82DBB7792007B304D /* HiNavigator.swift */,
 				8ECA6FC42D84039900EBA4D3 /* SendRequestView.swift */,
 				8E447BF02BBD52DE009B0FBF /* ContentView.swift */,
 				8EC1C13A2D894F4D000EB8B4 /* MockView.swift */,
@@ -296,6 +300,14 @@
 				8E3887E92D969B5E00627AAE /* HealthCodeView.swift */,
 			);
 			path = HealthCode;
+			sourceTree = "<group>";
+		};
+		8E3F56DA2DF8109B00815C4C /* Hrss */ = {
+			isa = PBXGroup;
+			children = (
+				8E3F56DB2DF810A800815C4C /* HrssHomeView.swift */,
+			);
+			path = Hrss;
 			sourceTree = "<group>";
 		};
 		8E447BE22BBD52DE009B0FBF = {
@@ -436,6 +448,7 @@
 		8ECA6FD52D840E3200EBA4D3 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				8E3F56DA2DF8109B00815C4C /* Hrss */,
 				8E0B1DDF2DDC1DFA00C9E6FC /* Demo */,
 				8E3887E82D969B2E00627AAE /* HealthCode */,
 			);
@@ -450,6 +463,7 @@
 				8E778D362D8D5CD100F18D1D /* HiListAppModuleRespModel.swift */,
 				8ECA6FE32D8426B300EBA4D3 /* HiUnitCfgRespModel.swift */,
 				8E09DD7C2DBA1F68007B304D /* HiTopListRespModel.swift */,
+				8E3F56DD2DF8242600815C4C /* HrssModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -679,7 +693,9 @@
 				8E0DAEA52DBDD1C500061D52 /* HiSiteObjectMapper.swift in Sources */,
 				8E0DAEA62DBDD1C500061D52 /* HiSiteYYModel.swift in Sources */,
 				8E0DAEA72DBDD1C500061D52 /* HiSiteHandyJSON.swift in Sources */,
-				8E09DDA92DBB779F007B304D /* HiNavigatorView.swift in Sources */,
+				8E3F56DC2DF810BD00815C4C /* HrssHomeView.swift in Sources */,
+				8E09DDA92DBB779F007B304D /* HiNavigator.swift in Sources */,
+				8E3F56DE2DF8242E00815C4C /* HrssModel.swift in Sources */,
 				8EC1C1322D891C20000EB8B4 /* YYClassInfo.m in Sources */,
 				8ECA6FD42D840E1F00EBA4D3 /* HiAPI.swift in Sources */,
 				8E0A097F2D880DD100044ADD /* HiJsonStrHelper.swift in Sources */,
@@ -862,7 +878,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -901,7 +917,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -9,14 +9,14 @@ import SwiftUI
 import UIKit
 @main
 struct Hi_SwiftUIApp: App {
-    
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @Environment(\.scenePhase) var scenePhase
     @StateObject var settings = Settings()
-    
+    @StateObject var pathManager = PathManager()
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(settings)
+            HrssHomeView().environmentObject(settings)
+                .environmentObject(pathManager)
         }.onChange(of: scenePhase) { phase in
             switch phase {
             case .active:

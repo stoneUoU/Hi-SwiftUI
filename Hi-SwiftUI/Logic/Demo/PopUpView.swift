@@ -11,42 +11,52 @@ struct PopUpView: View {
     @State private var showAlert = false
     var body: some View {
 //        HSAPopUpView(showAlert: $showAlert)
-        Button("点击弹窗") {
-            showAlert.toggle()
-        }
+        VStack {
+            HiHealthNavigtorCodeView()
+            Spacer()
+            Text("点击弹窗")
+                .font(.system(size: 14, weight: .medium, design: .serif))
+                .onTapGesture {
+                showAlert.toggle()
+            }
+            Spacer()
+        }.navigationBarBackButtonHidden()
+        
 //        .sheet(isPresented: $showAlert) {
 //            PopUpCenterView(showAlert: $showAlert).padding(.vertical, 50) // 根据需要调整垂直位置，使之居中显示
 //                }
-        .fullScreenCover(isPresented: $showAlert) {
-            ZStack {
-                Color.black.opacity(0.5) // 背景半透明遮罩层
-//                PopUpCenterView(showAlert: $showAlert).padding(.vertical, 50) // 根据需要调整垂直位置，使之居中显示
+        .overlay(alignment: .center) {
+            if (showAlert) {
+//                PopUpCenterView(showAlert: $showAlert)
                 HSAPopUpView(showAlert: $showAlert)
             }
         }.onAppear {
-            showAlert.toggle();
-        }
+//            showAlert.toggle();
+        }.navigationBarBackButtonHidden()
     }
 }
 
 struct HSAPopUpView: View {
     @Binding var showAlert: Bool
     var body: some View {
-        ZStack(alignment: Alignment.bottom){
-            Image("hsa_popup_example")
-            .resizable()
-            .frame(width: HiSCREENWIDTH - 108,
-                   height: 357,
-                   alignment: .center)
-            
-            Image("hsa_popup_close")
-                .resizable().onTapGesture {
-                    showAlert = false;
-                }
-            .frame(width: 34,
-                   height: 34,
-                   alignment: .center).offset(x:0,y:24+34)
-        }
+        ZStack {
+            Color.black.opacity(0.5) // 背景半透明遮罩层
+            ZStack(alignment: Alignment.bottom){
+                Image("hsa_popup_example")
+                .resizable()
+                .frame(width: HiSCREENWIDTH - 108,
+                       height: 357,
+                       alignment: .center)
+                
+                Image("hsa_popup_close")
+                    .resizable().onTapGesture {
+                        showAlert = false;
+                    }
+                .frame(width: 34,
+                       height: 34,
+                       alignment: .center).offset(x:0,y:24+34)
+            }
+        }.frame(width: UIScreen.main.bounds.width,height: UIScreen.main.bounds.height);
     }
 }
 
