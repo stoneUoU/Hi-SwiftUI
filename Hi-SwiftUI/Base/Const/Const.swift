@@ -35,7 +35,20 @@ public let HiIPhone12ProMax = HiSCREENWIDTH == 428 && HiSCREENHEIGHT == 926
 
 public let isIPhoneX = (HiIPhoneX || HiIPhoneXrMax || HiIPhone12PRO || HiIPhone12Mini || HiIPhone12ProMax)
 
-public let HiStatusBarH:CGFloat = (isIPhoneX ? 44 : 20)
+//var HiStatusBarH: CGFloat {
+//    var height: CGFloat = 0
+//    if #available(iOS 13.0, *) {
+//        if let windowScene = UIApplication.shared.windows.first?.window?.windowScene {
+//            if let statusBarManager = windowScene.statusBarManager {
+//                height = statusBarManager.statusBarFrame.height
+//            }
+//        }
+//    } else {
+//        height = UIApplication.shared.statusBarFrame.size.height
+//    }
+//    return height
+//}
+
 
 public let HiNavigationBarH:CGFloat = 44
 
@@ -43,4 +56,4 @@ public let HiTabBarH:CGFloat = (isIPhoneX ? (49+34) : 49)
 
 public let HiTabbarSafeBotM:CGFloat = (isIPhoneX ? (34) : 0)
 
-public let HiStatusBarAndNavigationBarH:CGFloat = (isIPhoneX ? (88) : 64)
+//public let HiStatusBarAndNavigationBarH:CGFloat = (isIPhoneX ? (88) : 64)
